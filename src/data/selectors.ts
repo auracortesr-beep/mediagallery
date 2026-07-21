@@ -11,9 +11,17 @@ function matchesFilters(photo: Photo, filters: Filters): boolean {
   return true;
 }
 
+export interface PhotoGroupMeta {
+  treatment: string | null;
+  totalRooms: number | null;
+  bedType: string;
+  maxOccupancy: number | null;
+}
+
 export interface PhotoGroup {
   label: string;
   photos: Photo[];
+  meta?: PhotoGroupMeta;
 }
 
 export function visiblePhotoGroups(category: Category, filters: Filters): PhotoGroup[] {
@@ -22,7 +30,11 @@ export function visiblePhotoGroups(category: Category, filters: Filters): PhotoG
       .filter((r) => !filters.roomType || r.name === filters.roomType)
       .filter((r) => filters.query.trim() === "" || r.name.toLowerCase().includes(filters.query.trim().toLowerCase()))
       .sort((a, b) => a.tier - b.tier)
-      .map((r) => ({ label: r.name, photos: r.photos.filter((p) => matchesFilters(p, filters)) }))
+      .map((r) => ({
+        label: r.name,
+        photos: r.photos.filter((p) => matchesFilters(p, filters)),
+        meta: { treatment: r.treatment, totalRooms: r.totalRooms, bedType: r.bedType, maxOccupancy: r.maxOccupancy },
+      }))
       .filter((g) => g.photos.length > 0);
   }
   const photos = (category.photos ?? []).filter((p) => matchesFilters(p, filters));
@@ -36,8 +48,9 @@ export function countVisiblePhotos(category: Category, filters: Filters): number
 export interface FlatPhotoEntry {
   photo: Photo;
   groupLabel: string;
+  meta?: PhotoGroupMeta;
 }
 
 export function flattenGroups(groups: PhotoGroup[]): FlatPhotoEntry[] {
-  return groups.flatMap((g) => g.photos.map((photo) => ({ photo, groupLabel: g.label })));
+  return groups.flatMap((g) => g.photos.map((photo) => ({ photo, groupLabel: g.label, meta: g.meta })));
 }

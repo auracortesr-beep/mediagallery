@@ -6,11 +6,39 @@
   margin-bottom: 26px;
 }
 
+.photogrid__group-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .photogrid__group-title {
   font-size: 13px;
   font-weight: 700;
   color: #4a4640;
-  margin: 0 0 10px;
+  margin: 0;
+}
+
+.photogrid__group-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.photogrid__meta-badge {
+  font-size: 11px;
+  color: #7a7568;
+  background: #efeadd;
+  border-radius: 10px;
+  padding: 2px 9px;
+}
+
+.photogrid__meta-badge--treatment {
+  background: #004a63;
+  color: #fff;
+  font-weight: 600;
 }
 
 .photogrid__grid {

@@ -59,6 +59,11 @@
   font-weight: 600;
 }
 
+.gallery__crumb-country {
+  color: #9a9082;
+  font-size: 12px;
+}
+
 .gallery__placeholder {
   padding: 60px 20px;
   text-align: center;

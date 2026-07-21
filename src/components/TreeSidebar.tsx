@@ -42,7 +42,10 @@ export function TreeSidebar({
               <span className="tree__caret">{isExpanded ? "▾" : "▸"}</span>
               {brand.name}
             </button>
-            {isExpanded && (
+            {isExpanded && brand.hotels.length === 0 && (
+              <div className="tree__empty">No resorts yet</div>
+            )}
+            {isExpanded && brand.hotels.length > 0 && (
               <div className="tree__hotels">
                 {brand.hotels.map((hotel) => {
                   const hotelExpanded = expandedHotel === hotel.id;

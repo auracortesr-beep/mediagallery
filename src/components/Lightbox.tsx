@@ -31,7 +31,7 @@ export function Lightbox({
     return () => window.removeEventListener("keydown", handleKey);
   }, [hasPrev, hasNext, onPrev, onNext, onClose]);
 
-  const { photo, groupLabel } = entry;
+  const { photo, groupLabel, meta } = entry;
   const isPortrait = photo.orientation === "portrait";
 
   return (
@@ -71,6 +71,8 @@ export function Lightbox({
             <span className="lightbox__badge lightbox__badge--outline">
               {isPortrait ? "Portrait" : "Landscape"}
             </span>
+            {meta?.treatment && <span className="lightbox__badge">{meta.treatment}</span>}
+            {meta?.bedType && <span className="lightbox__badge lightbox__badge--outline">{meta.bedType}</span>}
           </div>
           <div className="lightbox__actions">
             <button className="btn btn--primary">Download</button>

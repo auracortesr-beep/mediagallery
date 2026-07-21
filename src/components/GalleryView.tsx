@@ -67,7 +67,9 @@ export function GalleryView({
           {hotel && (
             <>
               <span className="gallery__crumb-sep">/</span>
-              <span>{hotel.name}</span>
+              <span>
+                {hotel.name} <span className="gallery__crumb-country">· {hotel.country}</span>
+              </span>
             </>
           )}
           {category && (
@@ -93,7 +95,9 @@ export function GalleryView({
           <div className="gallery__placeholder">
             {hotel
               ? "Pick a category from the sidebar to see media."
-              : "Pick a hotel, then a category, to browse media."}
+              : brand && brand.hotels.length === 0
+                ? `${brand.name} has no resorts yet.`
+                : "Pick a hotel, then a category, to browse media."}
           </div>
         )}
       </div>
