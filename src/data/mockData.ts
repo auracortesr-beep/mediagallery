@@ -65,6 +65,21 @@ function hueForHotel(hotelId: string): number {
   return h;
 }
 
+const PLACEHOLDER_CATEGORIES: { id: string; name: string; count: number; hueOffset: number }[] = [
+  { id: "around-resort", name: "Around Resort", count: 14, hueOffset: 40 },
+  { id: "restaurants-bars", name: "Restaurants & Bars", count: 10, hueOffset: 70 },
+  { id: "pools-beach", name: "Pools & Beach", count: 12, hueOffset: 100 },
+  { id: "weddings", name: "Weddings", count: 8, hueOffset: 130 },
+  { id: "groups-meetings", name: "Groups & Meetings", count: 6, hueOffset: 160 },
+  { id: "spa-activities", name: "Spa & Activities", count: 9, hueOffset: 190 },
+  { id: "kids-family", name: "Kids & Family", count: 7, hueOffset: 220 },
+  { id: "entertainment", name: "Entertainment", count: 6, hueOffset: 250 },
+  { id: "resort-map", name: "Resort Map", count: 2, hueOffset: 280 },
+  { id: "travel-partner-info", name: "Travel Partner Info", count: 6, hueOffset: 300 },
+  { id: "logos-brand-assets", name: "Logos & Brand Assets", count: 5, hueOffset: 320 },
+  { id: "videos", name: "Videos", count: 4, hueOffset: 340 },
+];
+
 export const BRANDS: Brand[] = SOURCE_BRANDS.map((brand) => ({
   id: brand.id,
   name: brand.name,
@@ -91,12 +106,9 @@ export const BRANDS: Brand[] = SOURCE_BRANDS.map((brand) => ({
       });
     }
 
-    categories.push(
-      { id: "around-resort", name: "Around Resort", photos: photos(hueBase + 40, 14) },
-      { id: "restaurants", name: "Restaurants", photos: photos(hueBase + 80, 10) },
-      { id: "weddings", name: "Weddings", photos: photos(hueBase + 120, 8) },
-      { id: "spa-activities", name: "Spa & Activities", photos: photos(hueBase + 160, 9) },
-    );
+    for (const c of PLACEHOLDER_CATEGORIES) {
+      categories.push({ id: c.id, name: c.name, photos: photos(hueBase + c.hueOffset, c.count) });
+    }
 
     return {
       id: hotel.id,
