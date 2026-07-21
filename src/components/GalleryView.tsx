@@ -18,7 +18,10 @@ export function GalleryView({
   onBackToBrands: () => void;
 }) {
   const [selection, setSelection] = useState<Selection>(initialSelection);
-  const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const [filters, setFilters] = useState<Filters>(() => ({
+    ...EMPTY_FILTERS,
+    roomType: initialSelection.roomType ?? "",
+  }));
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 

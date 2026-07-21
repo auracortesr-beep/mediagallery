@@ -6,6 +6,9 @@ export interface Selection {
   brandId: string;
   hotelId?: string;
   categoryId?: string;
+  // Only meaningful alongside categoryId "accommodations" — pre-applies the
+  // room type filter when jumping in directly from a search suggestion.
+  roomType?: string;
 }
 
 export function TreeSidebar({

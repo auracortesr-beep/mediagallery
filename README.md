@@ -7,7 +7,10 @@ the results grid.
 
 ## Structure
 
-- Landing page: brand grid with global search + upload entry point.
+- Landing page: brand grid with a real global search (filters the brand
+  tiles live, and surfaces matching resorts/room types as jump-to
+  suggestions that navigate straight into that hotel — pre-filtered to the
+  room type for a room match) + upload entry point.
 - Tree sidebar: collapsible, drills Brand → Hotel → Category.
 - Filter bar: search-within-view (matches room/category name and photo tags),
   room type, orientation, tag, and HQ-only filters.

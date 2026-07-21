@@ -28,7 +28,11 @@ export default function App() {
         {selection ? (
           <GalleryView initialSelection={selection} onBackToBrands={() => setSelection(null)} />
         ) : (
-          <BrandGrid onSelectBrand={handleSelectBrand} onUploadClick={() => setUploadOpen(true)} />
+          <BrandGrid
+            onSelectBrand={handleSelectBrand}
+            onUploadClick={() => setUploadOpen(true)}
+            onJumpTo={setSelection}
+          />
         )}
       </main>
       {uploadOpen && <UploadModal onClose={() => setUploadOpen(false)} onUploaded={handleUploaded} />}
