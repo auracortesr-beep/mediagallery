@@ -1,0 +1,49 @@
+.filterbar {
+  padding: 14px 20px 10px;
+  border-bottom: 1px solid #e3ded2;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.filterbar__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.filterbar__search {
+  flex: 1;
+  min-width: 200px;
+  padding: 9px 14px;
+  border-radius: 7px;
+  border: 1px solid #d7d3ca;
+  font-size: 14px;
+}
+
+.filterbar__select {
+  padding: 9px 10px;
+  border-radius: 7px;
+  border: 1px solid #d7d3ca;
+  font-size: 13px;
+  background: #fff;
+  font-family: inherit;
+}
+
+.filterbar__toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+  padding: 0 4px;
+}
+
+.filterbar__count {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8a8474;
+}

@@ -1,0 +1,30 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  flex-shrink: 0;
+  padding: 14px 24px;
+  background: #004a63;
+  color: #fff;
+}
+
+.app__title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.app__body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.app__body > * {
+  flex: 1;
+  min-height: 0;
+}

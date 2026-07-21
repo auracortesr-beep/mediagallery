@@ -1,0 +1,91 @@
+.tree {
+  width: 220px;
+  flex-shrink: 0;
+  border-right: 1px solid #e3ded2;
+  background: #faf8f3;
+  overflow-y: auto;
+  padding: 8px 0 24px;
+}
+
+.tree__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9a9082;
+}
+
+.tree__collapse {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #7a7568;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tree__collapse:hover {
+  background: #eee8db;
+}
+
+.tree__brand-btn,
+.tree__hotel-btn,
+.tree__category-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #1a1a1a;
+}
+
+.tree__brand-btn {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tree__hotel-btn {
+  padding: 6px 14px 6px 26px;
+  font-size: 13px;
+}
+
+.tree__category-btn {
+  padding: 5px 14px 5px 44px;
+  font-size: 12.5px;
+  color: #4a4640;
+}
+
+.tree__brand-btn:hover,
+.tree__hotel-btn:hover,
+.tree__category-btn:hover {
+  background: #f0ebdf;
+}
+
+.tree__brand-btn.is-active,
+.tree__hotel-btn.is-active {
+  background: #004a63;
+  color: #fff;
+}
+
+.tree__category-btn.is-active {
+  background: rgba(0, 74, 99, 0.12);
+  color: #004a63;
+  font-weight: 700;
+}
+
+.tree__caret {
+  width: 12px;
+  flex-shrink: 0;
+  font-size: 10px;
+  opacity: 0.7;
+}
