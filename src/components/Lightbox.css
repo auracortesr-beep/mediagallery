@@ -59,9 +59,11 @@
 }
 
 .lightbox__image {
+  display: block;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
 .lightbox__image--landscape {
@@ -86,6 +88,13 @@
   align-items: baseline;
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.lightbox__caption {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 8px;
 }
 

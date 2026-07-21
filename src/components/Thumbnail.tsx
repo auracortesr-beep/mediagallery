@@ -9,12 +9,16 @@ export function Thumbnail({ photo, onClick }: { photo: Photo; onClick: () => voi
       className={`thumb ${isPortrait ? "thumb--portrait" : "thumb--landscape"}`}
       onClick={onClick}
     >
-      <div
-        className="thumb__img"
-        style={{
-          background: `linear-gradient(135deg, hsl(${photo.hue} 45% 62%), hsl(${photo.hue + 25} 55% 40%))`,
-        }}
-      />
+      {photo.src ? (
+        <img className="thumb__img" src={photo.src} alt={photo.caption ?? ""} loading="lazy" />
+      ) : (
+        <div
+          className="thumb__img"
+          style={{
+            background: `linear-gradient(135deg, hsl(${photo.hue} 45% 62%), hsl(${photo.hue + 25} 55% 40%))`,
+          }}
+        />
+      )}
       <div className="thumb__hover-veil" />
       {photo.hq && <span className="thumb__badge">HQ</span>}
       <span className="thumb__orientation" title={photo.orientation}>

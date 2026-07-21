@@ -1,4 +1,4 @@
-import { SOURCE_BRANDS } from "./royaltonResorts.generated";
+import { SOURCE_BRANDS, REAL_PHOTOS } from "./royaltonResorts.generated";
 
 export type Orientation = "landscape" | "portrait";
 
@@ -8,6 +8,8 @@ export interface Photo {
   orientation: Orientation;
   tags: string[];
   hue: number;
+  src?: string;
+  caption?: string | null;
 }
 
 export interface RoomType {
@@ -65,6 +67,34 @@ function hueForHotel(hotelId: string): number {
   return h;
 }
 
+// Looks up hand-added real photos (src/data/source/media_photos.csv) for a
+// given resort+category(+room). Falls back to the synthetic placeholder
+// generator when nothing real has been added yet for that combo.
+function realOrPlaceholderPhotos(
+  hotelId: string,
+  categoryId: string,
+  roomCode: string,
+  hue: number,
+  placeholderCount: number,
+): Photo[] {
+  const real = REAL_PHOTOS[`${hotelId}||${categoryId}||${roomCode}`];
+  if (real && real.length > 0) {
+    return real.map((p) => {
+      photoSeq++;
+      return {
+        id: `ph-${photoSeq}`,
+        hq: p.hq,
+        orientation: p.orientation,
+        tags: p.tags,
+        hue,
+        src: p.src,
+        caption: p.caption,
+      };
+    });
+  }
+  return photos(hue, placeholderCount);
+}
+
 const PLACEHOLDER_CATEGORIES: { id: string; name: string; count: number; hueOffset: number }[] = [
   { id: "around-resort", name: "Around Resort", count: 14, hueOffset: 40 },
   { id: "restaurants-bars", name: "Restaurants & Bars", count: 10, hueOffset: 70 },
@@ -101,13 +131,23 @@ export const BRANDS: Brand[] = SOURCE_BRANDS.map((brand) => ({
           bedType: room.bedType,
           maxOccupancy: room.maxOccupancy,
           treatment: room.treatment,
-          photos: photos(hueBase + i * 11, 5 + (i % 4)),
+          photos: realOrPlaceholderPhotos(
+            hotel.id,
+            "accommodations",
+            room.roomCode,
+            hueBase + i * 11,
+            5 + (i % 4),
+          ),
         })),
       });
     }
 
     for (const c of PLACEHOLDER_CATEGORIES) {
-      categories.push({ id: c.id, name: c.name, photos: photos(hueBase + c.hueOffset, c.count) });
+      categories.push({
+        id: c.id,
+        name: c.name,
+        photos: realOrPlaceholderPhotos(hotel.id, c.id, "", hueBase + c.hueOffset, c.count),
+      });
     }
 
     return {

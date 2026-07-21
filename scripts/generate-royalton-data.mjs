@@ -1,6 +1,6 @@
 // Regenerates src/data/royaltonResorts.generated.ts from the source CSVs in
 // src/data/source/. Run with: npm run gen:data
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -88,6 +88,32 @@ function resolveResort(name) {
   if (!meta) throw new Error(`No master resort record for "${name}" (resolved "${resolved}")`);
   return meta;
 }
+
+// Same lookup, but for hand-edited input (media_photos.csv) — warn and skip
+// rather than crash the whole build over one typo'd resort name.
+function tryResolveResort(name) {
+  const resolved = RESORT_ALIASES[name] ?? name;
+  return resortByName.get(resolved) ?? null;
+}
+
+// Must stay in sync with the category id/name pairs in src/data/mockData.ts
+// (PLACEHOLDER_CATEGORIES, plus the "accommodations" category built from
+// room-inventory data).
+const CATEGORY_NAME_TO_ID = {
+  Accommodations: "accommodations",
+  "Around Resort": "around-resort",
+  "Restaurants & Bars": "restaurants-bars",
+  "Pools & Beach": "pools-beach",
+  Weddings: "weddings",
+  "Groups & Meetings": "groups-meetings",
+  "Spa & Activities": "spa-activities",
+  "Kids & Family": "kids-family",
+  Entertainment: "entertainment",
+  "Resort Map": "resort-map",
+  "Travel Partner Info": "travel-partner-info",
+  "Logos & Brand Assets": "logos-brand-assets",
+  Videos: "videos",
+};
 
 function brandBucketFor(hotelDescription, masterBrand) {
   const n = hotelDescription.toLowerCase();
@@ -181,6 +207,74 @@ if (reserveMeta && !roomsByResort.has(reserveMeta.HotelDescription)) {
   });
 }
 
+// --- Real photo overrides (optional, hand-maintained) ---
+// Keyed by `${hotelId}||${categoryId}||${roomCode}` (roomCode blank for
+// non-Accommodations categories). Any row here fully replaces the synthetic
+// placeholder photos for that exact resort+category(+room) combo.
+const REAL_PHOTOS = {};
+const mediaPhotosPath = path.join(SOURCE_DIR, "media_photos.csv");
+if (existsSync(mediaPhotosPath)) {
+  const mediaCsv = parseCsv(readFileSync(mediaPhotosPath, "utf-8"));
+  const mediaHeader = mediaCsv[0];
+  const mediaRows = mediaCsv
+    .slice(1)
+    .map((r) => Object.fromEntries(mediaHeader.map((h, i) => [h, (r[i] ?? "").trim()])));
+
+  for (const [i, row] of mediaRows.entries()) {
+    const rowNum = i + 2; // +1 for header, +1 for 1-indexing
+    if (!row.Resort || !row.Category || !row["Image Path or URL"]) {
+      console.warn(`media_photos.csv row ${rowNum}: missing Resort/Category/Image Path, skipping`);
+      continue;
+    }
+    if (row["Image Path or URL"].startsWith("REPLACE_ME")) continue; // template example row
+
+    const meta = tryResolveResort(row.Resort);
+    if (!meta) {
+      console.warn(`media_photos.csv row ${rowNum}: unknown Resort "${row.Resort}", skipping`);
+      continue;
+    }
+    const categoryId = CATEGORY_NAME_TO_ID[row.Category];
+    if (!categoryId) {
+      console.warn(`media_photos.csv row ${rowNum}: unknown Category "${row.Category}", skipping`);
+      continue;
+    }
+
+    let roomCode = "";
+    if (categoryId === "accommodations") {
+      const rooms = roomsByResort.get(row.Resort) ?? roomsByResort.get(meta.HotelDescription) ?? [];
+      const wanted = row["Room Type"].trim().toLowerCase();
+      const room = rooms.find(
+        (r) => r.roomCode.toLowerCase() === wanted || r.name.toLowerCase() === wanted,
+      );
+      if (!room) {
+        console.warn(
+          `media_photos.csv row ${rowNum}: Room Type "${row["Room Type"]}" not found for "${row.Resort}", skipping`,
+        );
+        continue;
+      }
+      roomCode = room.roomCode;
+    }
+
+    const hotelId = slugify(meta.Code || row.Resort);
+    const key = `${hotelId}||${categoryId}||${roomCode}`;
+    const src = /^https?:\/\//.test(row["Image Path or URL"])
+      ? row["Image Path or URL"]
+      : `/media/${row["Image Path or URL"].replace(/^\/+/, "")}`;
+
+    (REAL_PHOTOS[key] ??= []).push({
+      src,
+      caption: row.Caption || null,
+      hq: row.HQ.trim().toLowerCase() === "yes",
+      orientation: row.Orientation.trim().toLowerCase() === "portrait" ? "portrait" : "landscape",
+      tags: row.Tags
+        ? row.Tags.split(";")
+            .map((t) => t.trim())
+            .filter(Boolean)
+        : [],
+    });
+  }
+}
+
 const brands = BRAND_DEFS.map((b) => ({
   id: b.id,
   name: b.name,
@@ -191,9 +285,18 @@ const brands = BRAND_DEFS.map((b) => ({
 const banner = `// GENERATED FILE — do not edit by hand.
 // Regenerate with: npm run gen:data
 // Source: src/data/source/resorts_principal.csv + room_inventory_2026.csv
+//         + src/data/source/media_photos.csv (optional real-photo overrides)
 `;
 
 const body = `
+export interface RealPhoto {
+  src: string;
+  caption: string | null;
+  hq: boolean;
+  orientation: "landscape" | "portrait";
+  tags: string[];
+}
+
 export interface SourceRoomType {
   roomCode: string;
   name: string;
@@ -223,6 +326,10 @@ export interface SourceBrand {
 }
 
 export const SOURCE_BRANDS: SourceBrand[] = ${JSON.stringify(brands, null, 2)};
+
+// Keyed by \`\${hotelId}||\${categoryId}||\${roomCode}\` (roomCode is "" for
+// non-Accommodations categories). See src/data/source/media_photos.csv.
+export const REAL_PHOTOS: Record<string, RealPhoto[]> = ${JSON.stringify(REAL_PHOTOS, null, 2)};
 `;
 
 writeFileSync(OUT_FILE, banner + body);
@@ -230,3 +337,5 @@ console.log(`Wrote ${OUT_FILE}`);
 for (const b of brands) {
   console.log(`  ${b.name}: ${b.hotels.length} hotel(s)`);
 }
+const realPhotoCount = Object.values(REAL_PHOTOS).reduce((sum, arr) => sum + arr.length, 0);
+console.log(`Real photo overrides: ${realPhotoCount} photo(s) across ${Object.keys(REAL_PHOTOS).length} key(s)`);

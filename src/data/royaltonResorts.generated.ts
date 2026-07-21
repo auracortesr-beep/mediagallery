@@ -1,6 +1,15 @@
 // GENERATED FILE — do not edit by hand.
 // Regenerate with: npm run gen:data
 // Source: src/data/source/resorts_principal.csv + room_inventory_2026.csv
+//         + src/data/source/media_photos.csv (optional real-photo overrides)
+
+export interface RealPhoto {
+  src: string;
+  caption: string | null;
+  hq: boolean;
+  orientation: "landscape" | "portrait";
+  tags: string[];
+}
 
 export interface SourceRoomType {
   roomCode: string;
@@ -3408,3 +3417,7 @@ export const SOURCE_BRANDS: SourceBrand[] = [
     "hotels": []
   }
 ];
+
+// Keyed by `${hotelId}||${categoryId}||${roomCode}` (roomCode is "" for
+// non-Accommodations categories). See src/data/source/media_photos.csv.
+export const REAL_PHOTOS: Record<string, RealPhoto[]> = {};

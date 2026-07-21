@@ -1,0 +1,6 @@
+Resort,Category,Room Type,Image Path or URL,Caption,HQ,Orientation,Tags
+Royalton Bavaro,Accommodations,LXUUJ,REPLACE_ME/bavaro/ljs-01.jpg,Luxury Junior Suite - king bed,Yes,Landscape,room;interior
+Royalton Bavaro,Accommodations,LXUUJ,REPLACE_ME/bavaro/ljs-02.jpg,Luxury Junior Suite - bathroom,No,Landscape,room;bathroom
+Royalton Bavaro,Around Resort,,REPLACE_ME/bavaro/lobby-01.jpg,Main lobby,Yes,Landscape,lobby
+Royalton Bavaro,Resort Map,,REPLACE_ME/bavaro/resort-map.jpg,2026 property map,No,Portrait,map
+Royalton Bavaro,Travel Partner Info,,REPLACE_ME/bavaro/rate-sheet-2026.jpg,2026 rate sheet,No,Portrait,document;rates

@@ -53,12 +53,20 @@ export function Lightbox({
       </button>
 
       <div className="lightbox__stage" onClick={(e) => e.stopPropagation()}>
-        <div
-          className={`lightbox__image ${isPortrait ? "lightbox__image--portrait" : "lightbox__image--landscape"}`}
-          style={{
-            background: `linear-gradient(135deg, hsl(${photo.hue} 45% 62%), hsl(${photo.hue + 25} 55% 40%))`,
-          }}
-        />
+        {photo.src ? (
+          <img
+            className={`lightbox__image ${isPortrait ? "lightbox__image--portrait" : "lightbox__image--landscape"}`}
+            src={photo.src}
+            alt={photo.caption ?? ""}
+          />
+        ) : (
+          <div
+            className={`lightbox__image ${isPortrait ? "lightbox__image--portrait" : "lightbox__image--landscape"}`}
+            style={{
+              background: `linear-gradient(135deg, hsl(${photo.hue} 45% 62%), hsl(${photo.hue + 25} 55% 40%))`,
+            }}
+          />
+        )}
         <div className="lightbox__meta">
           <div className="lightbox__meta-row">
             <span className="lightbox__group-label">{groupLabel}</span>
@@ -66,6 +74,7 @@ export function Lightbox({
               {index + 1} / {total}
             </span>
           </div>
+          {photo.caption && <div className="lightbox__caption">{photo.caption}</div>}
           <div className="lightbox__badges">
             {photo.hq && <span className="lightbox__badge">HQ</span>}
             <span className="lightbox__badge lightbox__badge--outline">
