@@ -1,15 +1,22 @@
 import { useState } from "react";
 import { BrandGrid } from "./components/BrandGrid";
 import { GalleryView } from "./components/GalleryView";
+import { UploadModal } from "./components/UploadModal";
 import type { Brand } from "./data/mockData";
 import type { Selection } from "./components/TreeSidebar";
 import "./App.css";
 
 export default function App() {
   const [selection, setSelection] = useState<Selection | null>(null);
+  const [uploadOpen, setUploadOpen] = useState(false);
 
   function handleSelectBrand(brand: Brand) {
     setSelection({ brandId: brand.id });
+  }
+
+  function handleUploaded(next: Selection) {
+    setSelection(next);
+    setUploadOpen(false);
   }
 
   return (
@@ -21,9 +28,10 @@ export default function App() {
         {selection ? (
           <GalleryView initialSelection={selection} onBackToBrands={() => setSelection(null)} />
         ) : (
-          <BrandGrid onSelectBrand={handleSelectBrand} />
+          <BrandGrid onSelectBrand={handleSelectBrand} onUploadClick={() => setUploadOpen(true)} />
         )}
       </main>
+      {uploadOpen && <UploadModal onClose={() => setUploadOpen(false)} onUploaded={handleUploaded} />}
     </div>
   );
 }

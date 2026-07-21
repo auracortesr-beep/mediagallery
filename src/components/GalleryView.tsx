@@ -3,8 +3,9 @@ import { TreeSidebar, type Selection } from "./TreeSidebar";
 import { FilterBar, type Filters } from "./FilterBar";
 import { PhotoGrid } from "./PhotoGrid";
 import { Lightbox } from "./Lightbox";
-import { findBrand, visiblePhotoGroups, flattenGroups, availableTags } from "../data/selectors";
+import { findBrand, visiblePhotoGroups, flattenGroups, availableTags, withUploads } from "../data/selectors";
 import type { Photo } from "../data/mockData";
+import { useUploadedPhotos } from "../state/uploadStore";
 import "./GalleryView.css";
 
 const EMPTY_FILTERS: Filters = { query: "", roomType: "", hqOnly: false, orientation: "any", tag: "" };
@@ -23,7 +24,13 @@ export function GalleryView({
 
   const brand = findBrand(selection.brandId);
   const hotel = brand?.hotels.find((h) => h.id === selection.hotelId);
-  const category = hotel?.categories.find((c) => c.id === selection.categoryId);
+  const rawCategory = hotel?.categories.find((c) => c.id === selection.categoryId);
+
+  const uploads = useUploadedPhotos();
+  const category = useMemo(
+    () => (rawCategory && hotel ? withUploads(rawCategory, hotel.id, uploads) : rawCategory),
+    [rawCategory, hotel, uploads],
+  );
 
   const roomTypeOptions = useMemo(() => (category?.rooms ?? []).map((r) => r.name), [category]);
   const tagOptions = useMemo(() => (category ? availableTags(category) : []), [category]);

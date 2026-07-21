@@ -72,6 +72,28 @@ room/category names, and each photo's tags are shown in the lightbox.
 Synthetic placeholder photos always have zero tags, so the tag filter only
 appears once at least one real photo with tags exists in that category.
 
+### Uploading photos from the app
+
+The landing page's "Upload" button opens a real modal: pick a brand, resort,
+category (respecting the adults-only Kids & Family exclusion automatically,
+since it's populated from the same `hotel.categories` the rest of the app
+uses), room type if the category is Accommodations, then drag a photo in (or
+click to browse), add a caption/tags/HQ flag, and submit. On success it
+navigates you straight to that hotel/category so you see the photo appear —
+uploads always *add* to whatever's already showing, never replace, unlike
+`media_photos.csv` overrides.
+
+There's no backend yet, so this is wired against a mock:
+`src/lib/uploadApi.ts` exports a single `uploadPhoto()` function that
+currently just keeps the file in memory via `URL.createObjectURL` (auto-
+detecting landscape/portrait from the image's actual dimensions) and
+resolves after a simulated delay. Uploaded photos live in a session-only
+store (`src/state/uploadStore.ts`) that the gallery merges in at render
+time — nothing here persists past a page reload. When a real backend
+exists, `uploadPhoto()` is the one function to rewrite (e.g. a multipart
+POST that returns a real hosted URL); the modal, the store, and the gallery
+merge logic don't need to change.
+
 ## Development
 
 ```bash

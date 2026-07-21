@@ -1,8 +1,27 @@
 import { BRANDS, type Brand, type Category, type Photo } from "./mockData";
 import type { Filters } from "../components/FilterBar";
+import { uploadKey } from "../state/uploadStore";
 
 export function findBrand(brandId: string): Brand | undefined {
   return BRANDS.find((b) => b.id === brandId);
+}
+
+// Layers session-uploaded photos (from the Upload modal) on top of a
+// category's existing photos. Unlike media_photos.csv overrides, uploads
+// always add rather than replace — each one is a new photo a person just
+// added, not a curated correction of the placeholder set.
+export function withUploads(category: Category, hotelId: string, uploads: Record<string, Photo[]>): Category {
+  if (category.rooms) {
+    return {
+      ...category,
+      rooms: category.rooms.map((r) => {
+        const extra = uploads[uploadKey(hotelId, category.id, r.roomCode)] ?? [];
+        return extra.length > 0 ? { ...r, photos: [...r.photos, ...extra] } : r;
+      }),
+    };
+  }
+  const extra = uploads[uploadKey(hotelId, category.id, "")] ?? [];
+  return extra.length > 0 ? { ...category, photos: [...(category.photos ?? []), ...extra] } : category;
 }
 
 function matchesFilters(photo: Photo, filters: Filters): boolean {

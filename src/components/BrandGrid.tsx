@@ -1,12 +1,20 @@
 import { BRANDS, type Brand } from "../data/mockData";
 import "./BrandGrid.css";
 
-export function BrandGrid({ onSelectBrand }: { onSelectBrand: (brand: Brand) => void }) {
+export function BrandGrid({
+  onSelectBrand,
+  onUploadClick,
+}: {
+  onSelectBrand: (brand: Brand) => void;
+  onUploadClick: () => void;
+}) {
   return (
     <div className="landing">
       <div className="landing__topbar">
         <input className="landing__search" type="search" placeholder="Search hotel, brand, room type..." />
-        <button className="btn btn--primary">Upload</button>
+        <button className="btn btn--primary" onClick={onUploadClick}>
+          Upload
+        </button>
       </div>
       <div className="landing__section-label">Brands</div>
       <div className="landing__grid">
