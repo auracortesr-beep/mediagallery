@@ -83,6 +83,15 @@ export function Lightbox({
             {meta?.treatment && <span className="lightbox__badge">{meta.treatment}</span>}
             {meta?.bedType && <span className="lightbox__badge lightbox__badge--outline">{meta.bedType}</span>}
           </div>
+          {photo.tags.length > 0 && (
+            <div className="lightbox__tags">
+              {photo.tags.map((tag) => (
+                <span key={tag} className="lightbox__tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
           <div className="lightbox__actions">
             <button className="btn btn--primary">Download</button>
           </div>

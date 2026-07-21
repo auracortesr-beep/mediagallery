@@ -3,11 +3,11 @@ import { TreeSidebar, type Selection } from "./TreeSidebar";
 import { FilterBar, type Filters } from "./FilterBar";
 import { PhotoGrid } from "./PhotoGrid";
 import { Lightbox } from "./Lightbox";
-import { findBrand, visiblePhotoGroups, flattenGroups } from "../data/selectors";
+import { findBrand, visiblePhotoGroups, flattenGroups, availableTags } from "../data/selectors";
 import type { Photo } from "../data/mockData";
 import "./GalleryView.css";
 
-const EMPTY_FILTERS: Filters = { query: "", roomType: "", hqOnly: false, orientation: "any" };
+const EMPTY_FILTERS: Filters = { query: "", roomType: "", hqOnly: false, orientation: "any", tag: "" };
 
 export function GalleryView({
   initialSelection,
@@ -26,6 +26,7 @@ export function GalleryView({
   const category = hotel?.categories.find((c) => c.id === selection.categoryId);
 
   const roomTypeOptions = useMemo(() => (category?.rooms ?? []).map((r) => r.name), [category]);
+  const tagOptions = useMemo(() => (category ? availableTags(category) : []), [category]);
   const groups = useMemo(() => (category ? visiblePhotoGroups(category, filters) : []), [category, filters]);
   const flatPhotos = useMemo(() => flattenGroups(groups), [groups]);
   const resultCount = useMemo(() => groups.reduce((sum, g) => sum + g.photos.length, 0), [groups]);
@@ -87,6 +88,7 @@ export function GalleryView({
               onChange={setFilters}
               roomTypeOptions={roomTypeOptions}
               showRoomType={roomTypeOptions.length > 0}
+              tagOptions={tagOptions}
               resultCount={resultCount}
             />
             <PhotoGrid groups={groups} showGroupLabels={Boolean(category.rooms)} onOpenPhoto={handleOpenPhoto} />

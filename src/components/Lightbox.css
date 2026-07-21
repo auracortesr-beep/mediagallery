@@ -125,6 +125,26 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+.lightbox__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.lightbox__tag {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+.lightbox__tag::before {
+  content: "#";
+  opacity: 0.6;
+}
+
 .lightbox__actions {
   display: flex;
   gap: 10px;

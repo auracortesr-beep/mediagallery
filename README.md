@@ -9,7 +9,8 @@ the results grid.
 
 - Landing page: brand grid with global search + upload entry point.
 - Tree sidebar: collapsible, drills Brand → Hotel → Category.
-- Filter bar: search-within-view, room type, orientation, and HQ-only filters.
+- Filter bar: search-within-view (matches room/category name and photo tags),
+  room type, orientation, tag, and HQ-only filters.
 - Results grid: for Accommodations, photos are grouped by room tier
   (low → high), showing each room's treatment (Diamond Club / Star Class /
   The Mansion), total room count, and bed configuration; other categories
@@ -63,6 +64,13 @@ together in the same group. Run `npm run gen:data` afterward to pick up the
 changes. Unmatched resort names, category names, or room types are skipped
 with a console warning rather than failing the whole build, since this file
 is meant to be hand-edited.
+
+`Tags` (semicolon-separated) are fully wired up: the tag filter dropdown in
+the filter bar only lists tags actually present in the category being
+viewed, "search within this view" matches against tags as well as
+room/category names, and each photo's tags are shown in the lightbox.
+Synthetic placeholder photos always have zero tags, so the tag filter only
+appears once at least one real photo with tags exists in that category.
 
 ## Development
 
