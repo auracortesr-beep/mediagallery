@@ -142,7 +142,9 @@ export const BRANDS: Brand[] = SOURCE_BRANDS.map((brand) => ({
       });
     }
 
+    const isAdultsOnly = hotel.type === "Adults Only";
     for (const c of PLACEHOLDER_CATEGORIES) {
+      if (isAdultsOnly && c.id === "kids-family") continue;
       categories.push({
         id: c.id,
         name: c.name,

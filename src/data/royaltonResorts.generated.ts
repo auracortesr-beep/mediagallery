@@ -2850,7 +2850,7 @@ export const SOURCE_BRANDS: SourceBrand[] = [
         "id": "rvc",
         "name": "Royalton Vessence Cancun",
         "country": "Mexico",
-        "type": "Family",
+        "type": "Adults Only",
         "rooms": [
           {
             "roomCode": "LKUUR",

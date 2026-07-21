@@ -24,8 +24,12 @@ Brands, resorts, and room types are real: generated from
 gets the full 13-category set (Accommodations, Around Resort, Restaurants &
 Bars, Pools & Beach, Weddings, Groups & Meetings, Spa & Activities, Kids &
 Family, Entertainment, Resort Map, Travel Partner Info, Logos & Brand Assets,
-Videos) — only Accommodations is backed by real per-room data; the rest start
-as synthetic placeholders until real photos are added (see below).
+Videos) — except Kids & Family, which is dropped for any hotel whose
+`resorts_principal.csv` `Type` is `Adults Only` (Hideaway, Reserve, Grand
+Lido, CHIC, Royalton Vessence Cancun, Planet Hollywood Adult Scene — Royalton
+Vessence Barbados stays `Family`). Only Accommodations is backed by real
+per-room data; the rest start as synthetic placeholders until real photos
+are added (see below).
 
 Brand grouping doesn't come from the CSVs' own `Brand` column (which is
 coarser than the desired nav — e.g. CHIC and Luxury resorts are both tagged
