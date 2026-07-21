@@ -1,4 +1,4 @@
-﻿Resort,Count,Room Code,Room Name,Total Rooms,Bed Type,"Min
+Resort,Count,Room Code,Room Name,Total Rooms,Bed Type,"Min
 Occupancy","Max
 Occupancy","Max
 Adults","Kids
@@ -262,4 +262,52 @@ Planet Hollywood Costa Rica,3,LXOUJ,Junior Suite Ocean View (3 Handicap),77,1 Ki
 Planet Hollywood Costa Rica,4,LXOUJD,Star Class Junior Suite Ocean View,62,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Star Class
 Planet Hollywood Costa Rica,5,LPUU1D,Star Class,23,1 King + Sofa Bed,1,4,3,2,Star Class
 Planet Hollywood Costa Rica,6,LPUU2D,Star Class,Virtual,1 King + 2 Queen + Sofa Bed,1,8,6,4,Star Class
-Planet Hollywood Costa Rica,7,CMUUSD,Star Class Producer’S Suite,2,1 King + 2 Queen + Sofa Bed,1,8,6,4,Star Class
+Planet Hollywood Costa Rica,7,CMUUSD,Star Class Producer's Suite,2,1 King + 2 Queen + Sofa Bed,1,8,6,4,Star Class
+Royalton Reserve Paraíso de la Bonita,1,LKFUS,Master Suite Ocean Front - KING,40,King,1,2,2,N/A,
+Royalton Reserve Paraíso de la Bonita,2,LQFUS,Master Suite Ocean Front - DBL,11,2 Queen,1,4,4,N/A,
+Royalton Reserve Paraíso de la Bonita,3,LKFWS,Master Suite Ocean Front Private Pool King,10,King,1,2,2,N/A,
+Royalton Reserve Paraíso de la Bonita,4,LQFWS,Master Suite Ocean Front Private Pool - DBL,6,2 Queen,1,4,4,N/A,
+Royalton Reserve Paraíso de la Bonita,5,LKFWSD,Master Suite Ocean Front Private Pool King Diamond Club,10,2 King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,6,LXFWHSD,Master Luxury Suite Ocean Front Private Pool & Outdoor Shower DC,5,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,7,LXFUS2D,Master Suite Ocean Front Two bedroom DC,4,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,8,LPFW2D,Presidential Suite Ocean Front Two bedroom Private Pool DC,3,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,9,LPFWM2D,Master Presidential Suite Ocean Front Private Pool Two bedroom DC,1,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,10,LXFUSD,Luxury Suite Ocean Front King with Private Pool & Outdoor Shower with DC,4,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,11,CMOW1D,Chairman One bedroom Luxury Suite Ocean Front Private Pool & Outdoor shower,4,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,12,CMOP2D,Chairman Two bedroom suite Ocean Front Infinity & Private Pool Outdoor shower,1,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,13,CMFP2D,Chairman Two Bedroom Oceanfront Suite Four Terraces Private Outdoor Shower,Virtual,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,14,CMOP3D,Chairman Three bedroom Suite Ocean Front Infinity Private Pool Outdoor Shower,1,3 King,1,6,6,N/A,Diamond Club
+Royalton Vessence Cancun,1,LKUUR,Luxury Room,7,1 King,1,2,2,,
+Royalton Vessence Cancun,2,LQUUR,Luxury Room Two Queen,7,2 Queen,1,4,4,,
+Royalton Vessence Cancun,3,LKXUUJ,Luxury Junior Suite King,24,1 King,1,2,2,,
+Royalton Vessence Cancun,4,LQXUUJ,Luxury Junior Suite Two Queen,14,2 Queen,1,4,4,,
+Royalton Vessence Cancun,5,LKXOUJ,Luxury Junior Suite Ocean View King,48,1 King,1,2,2,,
+Royalton Vessence Cancun,6,LQXOUJ,Luxury Junior Suite Ocean View Two Queen,28,2 Queen,1,4,4,,
+Royalton Vessence Cancun,7,LKXUWJ,Luxury Junior Suite Swim Out,12,1 King,1,2,2,,
+Royalton Vessence Cancun,8,LQXUWJ,Luxury Junior Suite Swim Out Two Queen,12,2 Queen,1,4,4,,
+Royalton Vessence Cancun,9,LKXFUJ,Luxury Junior Suite Ocean Front,27,1 king,1,2,2,,
+Royalton Vessence Cancun,10,LQXFUJ,Luxury Junior Suite Ocean Front Two Queen,18,2 Queen,1,4,4,,
+Royalton Vessence Cancun,11,LKXFWJ,Luxury Junior Suite Swim Out Ocean Front,6,1 king,1,2,2,,
+Royalton Vessence Cancun,12,LQXFWJ,Luxury Junior Suite Swim Out Ocean Front Two Queen,4,2 Queen,1,4,4,,
+Royalton Vessence Cancun,13,LPUU1D,Luxury Presidential Multi-Bed Suite with Butler,32,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,14,LPOU1D,Luxury Presidential Multi-Bed Ocean View Suite with Butler,76,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,15,LPUW1D,Luxury Presidential Multi-Bed Swim Out Suite with Butler,6,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,16,LPFU1D,Luxury Presidential Multi-Bed Ocean Front Suite with Butler,45,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,17,LPFW1D,Luxury Presidential Multi-Bed Swim Out Ocean Front Suite with Butler,10,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,18,LPUU2D,Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,19,LPOU2D,Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,20,LPUW2D,Luxury Presidential Multi-Bed Swim Out Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,21,LPFU2D,Luxury Presidential Multi-Bed Ocean Front Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,22,LPFW2D,Luxury Presidential Multi-Bed Swim Out Ocean Front Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+The Westin Cancun,1,GRL,Guest Room Lagoon View,Virtual,,,,,,
+The Westin Cancun,2,GRO,Guest Room Ocean View,Virtual,,,,,,
+The Westin Cancun,3,DGRL,Deluxe Guest Room Lagoon View,Virtual,,,,,,
+The Westin Cancun,4,DGRO,Deluxe Guest Room Ocean View,Virtual,,,,,,
+The Westin Cancun,5,STL,Studio Lagoon View,Virtual,,,,,,
+The Westin Cancun,6,STO,Studio Ocean View,Virtual,,,,,,
+The Westin Cancun,7,JRS,Junior Suite,Virtual,,,,,,
+The Westin Cancun,8,TBVL,Two Bedroom Villa Lagoon View,Virtual,,,,,,
+The Westin Cancun,9,TBVO,Two Bedroom Villa Ocean View,Virtual,,,,,,
+The Westin Cancun,10,MSTE,Master Suite,Virtual,,,,,,
+The Westin Cancun,11,AMBS,Ambassador Suite,Virtual,,,,,,
+The Westin Cancun,12,PRES,Presidential Suite,Virtual,,,,,,

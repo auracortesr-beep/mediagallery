@@ -2845,6 +2845,278 @@ export const SOURCE_BRANDS: SourceBrand[] = [
             "treatment": "Diamond Club"
           }
         ]
+      },
+      {
+        "id": "rvc",
+        "name": "Royalton Vessence Cancun",
+        "country": "Mexico",
+        "type": "Family",
+        "rooms": [
+          {
+            "roomCode": "LKUUR",
+            "name": "Luxury Room",
+            "tier": 1,
+            "totalRooms": 7,
+            "bedType": "1 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQUUR",
+            "name": "Luxury Room Two Queen",
+            "tier": 2,
+            "totalRooms": 7,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKXUUJ",
+            "name": "Luxury Junior Suite King",
+            "tier": 3,
+            "totalRooms": 24,
+            "bedType": "1 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQXUUJ",
+            "name": "Luxury Junior Suite Two Queen",
+            "tier": 4,
+            "totalRooms": 14,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKXOUJ",
+            "name": "Luxury Junior Suite Ocean View King",
+            "tier": 5,
+            "totalRooms": 48,
+            "bedType": "1 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQXOUJ",
+            "name": "Luxury Junior Suite Ocean View Two Queen",
+            "tier": 6,
+            "totalRooms": 28,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKXUWJ",
+            "name": "Luxury Junior Suite Swim Out",
+            "tier": 7,
+            "totalRooms": 12,
+            "bedType": "1 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQXUWJ",
+            "name": "Luxury Junior Suite Swim Out Two Queen",
+            "tier": 8,
+            "totalRooms": 12,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKXFUJ",
+            "name": "Luxury Junior Suite Ocean Front",
+            "tier": 9,
+            "totalRooms": 27,
+            "bedType": "1 king",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQXFUJ",
+            "name": "Luxury Junior Suite Ocean Front Two Queen",
+            "tier": 10,
+            "totalRooms": 18,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKXFWJ",
+            "name": "Luxury Junior Suite Swim Out Ocean Front",
+            "tier": 11,
+            "totalRooms": 6,
+            "bedType": "1 king",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQXFWJ",
+            "name": "Luxury Junior Suite Swim Out Ocean Front Two Queen",
+            "tier": 12,
+            "totalRooms": 4,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LPUU1D",
+            "name": "Luxury Presidential Multi-Bed Suite with Butler",
+            "tier": 13,
+            "totalRooms": 32,
+            "bedType": "1 King + 1 Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPOU1D",
+            "name": "Luxury Presidential Multi-Bed Ocean View Suite with Butler",
+            "tier": 14,
+            "totalRooms": 76,
+            "bedType": "1 King + 1 Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPUW1D",
+            "name": "Luxury Presidential Multi-Bed Swim Out Suite with Butler",
+            "tier": 15,
+            "totalRooms": 6,
+            "bedType": "1 King + 1 Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFU1D",
+            "name": "Luxury Presidential Multi-Bed Ocean Front Suite with Butler",
+            "tier": 16,
+            "totalRooms": 45,
+            "bedType": "1 King + 1 Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFW1D",
+            "name": "Luxury Presidential Multi-Bed Swim Out Ocean Front Suite with Butler",
+            "tier": 17,
+            "totalRooms": 10,
+            "bedType": "1 King + 1 Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPUU2D",
+            "name": "Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler",
+            "tier": 18,
+            "totalRooms": null,
+            "bedType": "1 king + 2 queen + Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 8,
+            "maxAdults": 8,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPOU2D",
+            "name": "Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler",
+            "tier": 19,
+            "totalRooms": null,
+            "bedType": "1 king + 2 queen + Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 8,
+            "maxAdults": 8,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPUW2D",
+            "name": "Luxury Presidential Multi-Bed Swim Out Two Bedroom Suite with Butler",
+            "tier": 20,
+            "totalRooms": null,
+            "bedType": "1 king + 2 queen + Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 8,
+            "maxAdults": 8,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFU2D",
+            "name": "Luxury Presidential Multi-Bed Ocean Front Two Bedroom Suite with Butler",
+            "tier": 21,
+            "totalRooms": null,
+            "bedType": "1 king + 2 queen + Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 8,
+            "maxAdults": 8,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFW2D",
+            "name": "Luxury Presidential Multi-Bed Swim Out Ocean Front Two Bedroom Suite with Butler",
+            "tier": 22,
+            "totalRooms": null,
+            "bedType": "1 king + 2 queen + Murphy Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 8,
+            "maxAdults": 8,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          }
+        ]
       }
     ]
   },
@@ -2855,10 +3127,179 @@ export const SOURCE_BRANDS: SourceBrand[] = [
     "hotels": [
       {
         "id": "plb",
-        "name": "Royalton Reserve Para�so de la Bonita",
+        "name": "Royalton Reserve Paraíso de la Bonita",
         "country": "Mexico",
         "type": "Adults Only",
-        "rooms": []
+        "rooms": [
+          {
+            "roomCode": "LKFUS",
+            "name": "Master Suite Ocean Front - KING",
+            "tier": 1,
+            "totalRooms": 40,
+            "bedType": "King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQFUS",
+            "name": "Master Suite Ocean Front - DBL",
+            "tier": 2,
+            "totalRooms": 11,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKFWS",
+            "name": "Master Suite Ocean Front Private Pool King",
+            "tier": 3,
+            "totalRooms": 10,
+            "bedType": "King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LQFWS",
+            "name": "Master Suite Ocean Front Private Pool - DBL",
+            "tier": 4,
+            "totalRooms": 6,
+            "bedType": "2 Queen",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LKFWSD",
+            "name": "Master Suite Ocean Front Private Pool King Diamond Club",
+            "tier": 5,
+            "totalRooms": 10,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LXFWHSD",
+            "name": "Master Luxury Suite Ocean Front Private Pool & Outdoor Shower DC",
+            "tier": 6,
+            "totalRooms": 5,
+            "bedType": "King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LXFUS2D",
+            "name": "Master Suite Ocean Front Two bedroom DC",
+            "tier": 7,
+            "totalRooms": 4,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFW2D",
+            "name": "Presidential Suite Ocean Front Two bedroom Private Pool DC",
+            "tier": 8,
+            "totalRooms": 3,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LPFWM2D",
+            "name": "Master Presidential Suite Ocean Front Private Pool Two bedroom DC",
+            "tier": 9,
+            "totalRooms": 1,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "LXFUSD",
+            "name": "Luxury Suite Ocean Front King with Private Pool & Outdoor Shower with DC",
+            "tier": 10,
+            "totalRooms": 4,
+            "bedType": "King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "CMOW1D",
+            "name": "Chairman One bedroom Luxury Suite Ocean Front Private Pool & Outdoor shower",
+            "tier": 11,
+            "totalRooms": 4,
+            "bedType": "King",
+            "minOccupancy": 1,
+            "maxOccupancy": 2,
+            "maxAdults": 2,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "CMOP2D",
+            "name": "Chairman Two bedroom suite Ocean Front Infinity & Private Pool Outdoor shower",
+            "tier": 12,
+            "totalRooms": 1,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "CMFP2D",
+            "name": "Chairman Two Bedroom Oceanfront Suite Four Terraces Private Outdoor Shower",
+            "tier": 13,
+            "totalRooms": null,
+            "bedType": "2 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          },
+          {
+            "roomCode": "CMOP3D",
+            "name": "Chairman Three bedroom Suite Ocean Front Infinity Private Pool Outdoor Shower",
+            "tier": 14,
+            "totalRooms": 1,
+            "bedType": "3 King",
+            "minOccupancy": 1,
+            "maxOccupancy": 6,
+            "maxAdults": 6,
+            "kidsMax": null,
+            "treatment": "Diamond Club"
+          }
+        ]
       }
     ]
   },
@@ -2867,6 +3308,98 @@ export const SOURCE_BRANDS: SourceBrand[] = [
     "name": "Planet Hollywood by Royalton",
     "brandId": 18,
     "hotels": [
+      {
+        "id": "pac",
+        "name": "Planet Hollywood Adult Scene Cancun by Royalton",
+        "country": "Mexico",
+        "type": "Adults Only",
+        "rooms": [
+          {
+            "roomCode": "LXUUJ",
+            "name": "Junior Suite (1 Handicap-Connecting)",
+            "tier": 1,
+            "totalRooms": 224,
+            "bedType": "1 King / 2 Queen + Sofa Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LXUUJD",
+            "name": "Star Class Junior Suite",
+            "tier": 2,
+            "totalRooms": 28,
+            "bedType": "1 King / 2 Queen + Sofa",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Star Class"
+          },
+          {
+            "roomCode": "LXOUJD",
+            "name": "Star Class Junior Suite Ocean View",
+            "tier": 3,
+            "totalRooms": 16,
+            "bedType": "1 King + Sofa Bed",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Star Class"
+          },
+          {
+            "roomCode": "LXUWJ",
+            "name": "Junior Suite Swim Out",
+            "tier": 4,
+            "totalRooms": 68,
+            "bedType": "1 King / 2 Queen + Sofa",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LXUWJD",
+            "name": "Star Class Junior Suite Swim Out",
+            "tier": 5,
+            "totalRooms": 14,
+            "bedType": "1 King / 2 Queen + Sofa",
+            "minOccupancy": 1,
+            "maxOccupancy": 4,
+            "maxAdults": 4,
+            "kidsMax": null,
+            "treatment": "Star Class"
+          },
+          {
+            "roomCode": "LPUU1",
+            "name": "Directors Suite One Bedroom",
+            "tier": 6,
+            "totalRooms": 24,
+            "bedType": "1 King + Sofa",
+            "minOccupancy": 1,
+            "maxOccupancy": 3,
+            "maxAdults": 3,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "LPUU1D",
+            "name": "Star Class Directors Suite One Bedroom",
+            "tier": 7,
+            "totalRooms": 6,
+            "bedType": "1 King + Sofa",
+            "minOccupancy": 1,
+            "maxOccupancy": 3,
+            "maxAdults": 3,
+            "kidsMax": null,
+            "treatment": "Star Class"
+          }
+        ]
+      },
       {
         "id": "pca",
         "name": "Planet Hollywood Cancun by Royalton",
@@ -3162,105 +3695,6 @@ export const SOURCE_BRANDS: SourceBrand[] = [
     ]
   },
   {
-    "id": "planet-hollywood-adult-scene",
-    "name": "Planet Hollywood Adult Scene by Royalton",
-    "brandId": 21,
-    "hotels": [
-      {
-        "id": "pac",
-        "name": "Planet Hollywood Adult Scene Cancun by Royalton",
-        "country": "Mexico",
-        "type": "Adults Only",
-        "rooms": [
-          {
-            "roomCode": "LXUUJ",
-            "name": "Junior Suite (1 Handicap-Connecting)",
-            "tier": 1,
-            "totalRooms": 224,
-            "bedType": "1 King / 2 Queen + Sofa Bed",
-            "minOccupancy": 1,
-            "maxOccupancy": 4,
-            "maxAdults": 4,
-            "kidsMax": null,
-            "treatment": null
-          },
-          {
-            "roomCode": "LXUUJD",
-            "name": "Star Class Junior Suite",
-            "tier": 2,
-            "totalRooms": 28,
-            "bedType": "1 King / 2 Queen + Sofa",
-            "minOccupancy": 1,
-            "maxOccupancy": 4,
-            "maxAdults": 4,
-            "kidsMax": null,
-            "treatment": "Star Class"
-          },
-          {
-            "roomCode": "LXOUJD",
-            "name": "Star Class Junior Suite Ocean View",
-            "tier": 3,
-            "totalRooms": 16,
-            "bedType": "1 King + Sofa Bed",
-            "minOccupancy": 1,
-            "maxOccupancy": 4,
-            "maxAdults": 4,
-            "kidsMax": null,
-            "treatment": "Star Class"
-          },
-          {
-            "roomCode": "LXUWJ",
-            "name": "Junior Suite Swim Out",
-            "tier": 4,
-            "totalRooms": 68,
-            "bedType": "1 King / 2 Queen + Sofa",
-            "minOccupancy": 1,
-            "maxOccupancy": 4,
-            "maxAdults": 4,
-            "kidsMax": null,
-            "treatment": null
-          },
-          {
-            "roomCode": "LXUWJD",
-            "name": "Star Class Junior Suite Swim Out",
-            "tier": 5,
-            "totalRooms": 14,
-            "bedType": "1 King / 2 Queen + Sofa",
-            "minOccupancy": 1,
-            "maxOccupancy": 4,
-            "maxAdults": 4,
-            "kidsMax": null,
-            "treatment": "Star Class"
-          },
-          {
-            "roomCode": "LPUU1",
-            "name": "Directors Suite One Bedroom",
-            "tier": 6,
-            "totalRooms": 24,
-            "bedType": "1 King + Sofa",
-            "minOccupancy": 1,
-            "maxOccupancy": 3,
-            "maxAdults": 3,
-            "kidsMax": null,
-            "treatment": null
-          },
-          {
-            "roomCode": "LPUU1D",
-            "name": "Star Class Directors Suite One Bedroom",
-            "tier": 7,
-            "totalRooms": 6,
-            "bedType": "1 King + Sofa",
-            "minOccupancy": 1,
-            "maxOccupancy": 3,
-            "maxAdults": 3,
-            "kidsMax": null,
-            "treatment": "Star Class"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "mystique",
     "name": "Mystique by Royalton",
     "brandId": 19,
@@ -3414,7 +3848,160 @@ export const SOURCE_BRANDS: SourceBrand[] = [
     "id": "westin-cancun",
     "name": "The Westin Cancun",
     "brandId": 2039,
-    "hotels": []
+    "hotels": [
+      {
+        "id": "wsc",
+        "name": "The Westin Cancun",
+        "country": "Mexico",
+        "type": "Family",
+        "rooms": [
+          {
+            "roomCode": "GRL",
+            "name": "Guest Room Lagoon View",
+            "tier": 1,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "GRO",
+            "name": "Guest Room Ocean View",
+            "tier": 2,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "DGRL",
+            "name": "Deluxe Guest Room Lagoon View",
+            "tier": 3,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "DGRO",
+            "name": "Deluxe Guest Room Ocean View",
+            "tier": 4,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "STL",
+            "name": "Studio Lagoon View",
+            "tier": 5,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "STO",
+            "name": "Studio Ocean View",
+            "tier": 6,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "JRS",
+            "name": "Junior Suite",
+            "tier": 7,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "TBVL",
+            "name": "Two Bedroom Villa Lagoon View",
+            "tier": 8,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "TBVO",
+            "name": "Two Bedroom Villa Ocean View",
+            "tier": 9,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "MSTE",
+            "name": "Master Suite",
+            "tier": 10,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "AMBS",
+            "name": "Ambassador Suite",
+            "tier": 11,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          },
+          {
+            "roomCode": "PRES",
+            "name": "Presidential Suite",
+            "tier": 12,
+            "totalRooms": null,
+            "bedType": "",
+            "minOccupancy": null,
+            "maxOccupancy": null,
+            "maxAdults": null,
+            "kidsMax": null,
+            "treatment": null
+          }
+        ]
+      }
+    ]
   }
 ];
 

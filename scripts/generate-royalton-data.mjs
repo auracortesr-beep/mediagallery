@@ -122,14 +122,16 @@ function brandBucketFor(hotelDescription, masterBrand) {
   if (n.includes("mystique")) return "mystique";
   if (n.includes("vessence")) return "vessence";
   if (n.includes("reserve")) return "reserve";
-  if (n.includes("planet hollywood adult scene")) return "ph-adult-scene";
+  // Planet Hollywood Adult Scene lives under the same top-level brand as the
+  // rest of Planet Hollywood (no separate "Adult Scene" brand tile).
   if (n.includes("planet hollywood")) return "planet-hollywood";
   if (n.includes("grand lido")) return "grand-lido";
+  if (n.includes("westin")) return "westin";
   if (masterBrand === "Royalton" || n.includes("royalton")) return "royalton-luxury";
   return "royalton-luxury";
 }
 
-// The 10 top-level brands as given (name, external brand_id, bucket key).
+// The 9 top-level brands as given (name, external brand_id, bucket key).
 const BRAND_DEFS = [
   { bucket: "royalton-luxury", id: "royalton-luxury", name: "Royalton Luxury Resorts", brandId: 1 },
   { bucket: "hideaway", id: "royalton-hideaway", name: "Royalton Hideaway Resorts", brandId: 3 },
@@ -137,12 +139,6 @@ const BRAND_DEFS = [
   { bucket: "vessence", id: "royalton-vessence", name: "Royalton Vessence", brandId: 2036 },
   { bucket: "reserve", id: "royalton-reserve", name: "Royalton Reserve", brandId: 2037 },
   { bucket: "planet-hollywood", id: "planet-hollywood", name: "Planet Hollywood by Royalton", brandId: 18 },
-  {
-    bucket: "ph-adult-scene",
-    id: "planet-hollywood-adult-scene",
-    name: "Planet Hollywood Adult Scene by Royalton",
-    brandId: 21,
-  },
   { bucket: "mystique", id: "mystique", name: "Mystique by Royalton", brandId: 19 },
   { bucket: "grand-lido", id: "grand-lido", name: "Grand Lido", brandId: 10 },
   { bucket: "westin", id: "westin-cancun", name: "The Westin Cancun", brandId: 2039 },

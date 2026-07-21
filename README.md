@@ -29,10 +29,19 @@ as synthetic placeholders until real photos are added (see below).
 
 Brand grouping doesn't come from the CSVs' own `Brand` column (which is
 coarser than the desired nav — e.g. CHIC and Luxury resorts are both tagged
-`Royalton`) — it's inferred from each resort's name against the 10-brand
-list the product side provided. One resort was renamed between the two
-source files (room inventory's "Royalton Chic Barbados" ↔ the master list's
-"Royalton Vessence Barbados"); that alias is hardcoded in the generator.
+`Royalton`) — it's inferred from each resort's name against the 9-brand list
+the product side provided (Royalton Luxury, Hideaway, CHIC, Vessence,
+Reserve, Planet Hollywood by Royalton, Mystique, Grand Lido, The Westin
+Cancun). Planet Hollywood Adult Scene Cancun is a hotel *under* Planet
+Hollywood by Royalton, not its own brand. One resort was renamed between the
+two source files (room inventory's "Royalton Chic Barbados" ↔ the master
+list's "Royalton Vessence Barbados"); that alias is hardcoded in the
+generator.
+
+The Westin Cancun's 12 accommodation types have no real bed-type/occupancy/
+room-count data yet (`Total Rooms` is set to `Virtual` so no misleading "0
+rooms" badge shows) — only the room names and a low→high tier order are
+real. Fill in the rest in `room_inventory_2026.csv` as it becomes available.
 
 ### Adding real photos
 
