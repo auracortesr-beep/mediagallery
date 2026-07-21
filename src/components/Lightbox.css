@@ -1,0 +1,122 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(10, 10, 8, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+}
+
+.lightbox__close:hover {
+  opacity: 0.7;
+}
+
+.lightbox__nav {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: background 0.12s ease;
+}
+
+.lightbox__nav:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.lightbox__nav:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.lightbox__stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: min(720px, 80vw);
+  margin: 0 20px;
+}
+
+.lightbox__image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox__image--landscape {
+  aspect-ratio: 4 / 3;
+}
+
+.lightbox__image--portrait {
+  aspect-ratio: 3 / 4;
+  height: min(62vh, 640px);
+  width: auto;
+  max-width: 100%;
+}
+
+.lightbox__meta {
+  width: 100%;
+  color: #fff;
+}
+
+.lightbox__meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.lightbox__count {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lightbox__badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.lightbox__badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 10px;
+  background: #004a63;
+  color: #fff;
+}
+
+.lightbox__badge--outline {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox__actions {
+  display: flex;
+  gap: 10px;
+}

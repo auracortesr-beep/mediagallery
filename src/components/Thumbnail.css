@@ -1,9 +1,21 @@
 .thumb {
   position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #eee;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.thumb:hover,
+.thumb:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  outline: none;
 }
 
 .thumb--landscape {
@@ -17,6 +29,19 @@
 .thumb__img {
   width: 100%;
   height: 100%;
+}
+
+.thumb__hover-veil {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.thumb:hover .thumb__hover-veil,
+.thumb:focus-visible .thumb__hover-veil {
+  opacity: 1;
 }
 
 .thumb__badge {
