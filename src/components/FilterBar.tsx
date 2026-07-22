@@ -6,6 +6,7 @@ export interface Filters {
   roomType: string;
   hqOnly: boolean;
   orientation: Orientation | "any";
+  tag: string;
 }
 
 export function FilterBar({
@@ -13,12 +14,14 @@ export function FilterBar({
   onChange,
   roomTypeOptions,
   showRoomType,
+  tagOptions,
   resultCount,
 }: {
   filters: Filters;
   onChange: (next: Filters) => void;
   roomTypeOptions: string[];
   showRoomType: boolean;
+  tagOptions: string[];
   resultCount: number;
 }) {
   return (
@@ -27,7 +30,7 @@ export function FilterBar({
         <input
           className="filterbar__search"
           type="search"
-          placeholder="Search within this view..."
+          placeholder="Search within this view (name or tag)..."
           value={filters.query}
           onChange={(e) => onChange({ ...filters, query: e.target.value })}
         />
@@ -54,6 +57,20 @@ export function FilterBar({
           <option value="landscape">Landscape</option>
           <option value="portrait">Portrait</option>
         </select>
+        {tagOptions.length > 0 && (
+          <select
+            className="filterbar__select"
+            value={filters.tag}
+            onChange={(e) => onChange({ ...filters, tag: e.target.value })}
+          >
+            <option value="">Tag: all</option>
+            {tagOptions.map((tag) => (
+              <option key={tag} value={tag}>
+                {tag}
+              </option>
+            ))}
+          </select>
+        )}
         <label className="filterbar__toggle">
           <input
             type="checkbox"

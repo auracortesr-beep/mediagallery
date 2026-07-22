@@ -1,0 +1,313 @@
+Resort,Count,Room Code,Room Name,Total Rooms,Bed Type,"Min
+Occupancy","Max
+Occupancy","Max
+Adults","Kids
+Max",Treatment
+Grand Lido Negril,1,SNOUS,Sunset Ocean View Suite,16,1 King / 2 Queen,1,3,3,N/A,Diamond Club
+Grand Lido Negril,2,SNUWS,Sunset Swim Out Suite,8,1 King / 2 Queen,1,3,3,N/A,Diamond Club
+Grand Lido Negril,3,PHOJ1,Luxury Penthouse One Bedroom Suite Ocean View Terrace Jacuzzi,2,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton Hideaway Negril,1,LXOUJ,Luxury Junior Suite Ocean View (2 Handicap),73,1 King / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Negril,2,LXOUJD,Luxury Junior Suite Ocean View Dc,20,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Negril,3,LXUWJ,Luxury Junior Suite Swim Out,26,1 King / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Negril,4,LXUWJD,Luxury Junior Suite Swim Out Dc,8,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Negril,5,LPOU1,Luxury Presidential One Bedroom Suite Ocean View,5,1 King + Sofa,1,3,3,N/A,
+Royalton Hideaway Negril,6,LPOU1D,Luxury Presidential One Bedroom Suite Ocean View Dc,2,1 King + Sofa,1,3,3,N/A,Diamond Club
+Royalton Hideaway Negril,7,PHOJ1D,Luxury Penthouse One Bedroom Suite Ocean View Terrace Jacuzzi Dc,4,1 King + Sofa,1,3,3,N/A,Diamond Club
+Royalton Negril,1,LXUUJ,Luxury Junior Suite,45,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Negril,2,LXOUJ,Luxury Junior Suite Ocean View,121,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Negril,3,LXOUJD,Luxury Junior Suite Ocean View Dc (2 Handicap),48,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Negril,4,LXUWJ,Luxury Junior Suite Swim Out (1 Handicap),68,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Negril,5,LXUWJD,Luxury Junior Suite Swim Out Dc,28,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Negril,6,LFOUS,Luxury Family Suite Ocean View,28,1 King + Sofa,1,4,3,3,
+Royalton Negril,7,LFOUSD,Luxury Family Suite Ocean View Dc,20,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Negril,8,LPOU1,Luxury Presidential One Bedroom Ocean View,24,1 King + 2 Sofa,1,5,4,3,
+Royalton Negril,9,LPOU2,Luxury Presidential Two Bedroom Ocean View,Virtual,1 King + 2 Queen + 3 Sofa,1,9,7,4,
+Royalton Negril,10,LPOU1D,Luxury Presidential One Bedroom Ocean View Dc,10,1 King + 2 Sofa,1,5,4,3,Diamond Club
+Royalton Negril,11,LPOU2D,Luxury Presidential Two Bedroom Ocean View Dc,Virtual,1 King + 2 Queen + 3 Sofa,1,9,7,4,Diamond Club
+Royalton Negril,12,LPOW1D,Luxury Presidential One Bedroom Swim Out Dc,4,1 King + 2 Sofa,1,5,4,3,Diamond Club
+Royalton Negril,13,PHOJ1D,Luxury Penthouse One Bedroom Suite Ocean View Terrace Jacuzi Dc,6,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Negril,14,CMFU2D,Luxury Chairman Two Bedroom Ocean Front Suite Dc,4,1 King + 2 Queen,1,6,6,4,Diamond Club
+Royalton Negril,15,CMFU3D,Luxury Chairman Three Bedroom Ocean Front Suite Dc,Virtual,1 King + 4 Queen,1,10,8,6,Diamond Club
+Royalton Negril,16,CMFU4D,Luxury Chairman Four Bedroom Ocean Front Suite Dc,Virtual,2 King + 4 Queen,1,14,12,8,Diamond Club
+Royalton Blue Waters,1,LXUUJ,Luxury Junior Suite (2 Handicap),24,1 King + Sofa Bed / 2 Queen,1,4,4,3,
+Royalton Blue Waters,2,LXOUJ,Luxury Junior Suite Ocean View,120,1 King + Sofa Bed / 2 Queen,1,4,4,3,
+Royalton Blue Waters,3,LXOUJD,Luxury Junior Suite Ocean View Dc,50,1 King + Sofa Bed / 2 Queen,1,4,4,3,Diamond Club
+Royalton Blue Waters,4,LXUWJ,Luxury Junior Suite Swim Out,12,1 King + Sofa Bed / 2 Queen,1,4,4,3,
+Royalton Blue Waters,5,LXUWJD,Luxury Junior Suite Swim Out Dc,12,1 King + Sofa Bed / 2 Queen,1,4,4,3,Diamond Club
+Royalton Blue Waters,6,LPOU1D,Luxury Presidential Ocean View One Bedroom Suite Dc,6,1 King + 1 Sofa Bed,1,4,3,3,Diamond Club
+Royalton Blue Waters,7,LPOU2D,Luxury Presidential Ocean View Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + 1 Sofa Bed,1,8,6,4,Diamond Club
+Royalton Blue Waters,8,CMOU2D,Luxury Chairman'S Ocean View Two Bedroom Suite Dc,1,1 King + 2 Queen + 1 Sofa Bed,1,6,6,4,Diamond Club
+Royalton Blue Waters,9,CMOU3D,Luxury Chairman'S Ocean View Three Bedroom Suite Dc,Virtual,1 King + 4 Queen + 1 Sofa Bed,1,10,8,6,Diamond Club
+Royalton Hideaway Blue Waters,1,LXUUR,Luxury Room,162,1 King / 2 Twin,1,2,2,N/A,
+Royalton Hideaway Blue Waters,2,LXOUR,Luxury Ocean View Room,105,1 King / 2 Twin,1,2,2,N/A,
+Royalton Hideaway Blue Waters,3,LXOURD,Luxury Ocean View Room Diamond Club,28,1 King / 2 Twin,1,2,2,N/A,Diamond Club
+Royalton Hideaway Blue Waters,4,LXOUJD,Luxury Junior Suite Ocean View Diamond Club,15,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Blue Waters,5,LXOCJD,Luxury Junior Suite Ocean Corner View Diamond Club,8,1 King,1,2,2,N/A,Diamond Club
+Royalton Hideaway Blue Waters,6,LXOZJD,Luxury Junior Suite Ocean View Terrace Jacuzzi Diamond Club,6,1 King,1,2,2,N/A,Diamond Club
+Royalton Hideaway Blue Waters,7,LXUWJD,Luxury Junior Suite Swim Out Diamond Club,11,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Blue Waters,8,LPOZ1D,Luxury Presidential Jacuzzi Ocean View One Bedroom Suite Diamond Club,12,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Hideaway Blue Waters,9,LPOZD2,Luxury Presidential Jacuzzi Ocean View Two Bedroom Suite Diamond Club,Virtual,1 King + 2 Queen + 1 Sofa Bed,1,7,7,N/A,Diamond Club
+Royalton Hideaway Blue Waters,10,LPUY1D,Luxury Presidential Jacuzzi Swim Out Pool View One Bedroom Suite Diamond Club,4,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Hideaway Blue Waters,11,LPUY2D,Luxury Presidential Jacuzzi Swim Out Pool View Two Bedroom Suite Diamond Club,Virtual,1 King + 2 Queen + 1 Sofa Bed,1,5,5,N/A,Diamond Club
+Royalton Hideaway Blue Waters,12,CMFW1D,Chairman Beach Walkout Swim Out Suite Diamond Club,1,1 King,1,3,3,N/A,Diamond Club
+Royalton Hideaway Saint Lucia,1,LXUUJ,Luxury Junior Suite (1 Handicap),36,1 King / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Saint Lucia,2,LXUUJD,Luxury Junior Suite Dc (1 Handicap),10,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Saint Lucia,3,LXOUJ,Luxury Junior Suite Ocean View (1 Handicap),48,1 King / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Saint Lucia,4,LXOUJD,Luxury Junior Suite Ocean View Dc,26,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Saint Lucia,5,LXUWJ,Luxury Junior Suite Swim Out,24,1 King / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Saint Lucia,6,LXUWJD,Luxury Junior Suite Swim Out Dc,10,1 King / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Saint Lucia,7,LPOU1,Luxury Presidential One Bedroom Ocean View,8,1 King + 1 Sofa,1,3,3,N/A,
+Royalton Hideaway Saint Lucia,8,LPOU1D,Luxury Presidential One Bedroom Ocean View Dc,2,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton Hideaway Saint Lucia,9,PHOJ1D,Luxury Penthouse One Bedroom Suite Ocean View Terrace Jacuzzi Dc,2,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton Saint Lucia,1,LXUUJ,Luxury Junior Suite,28,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Saint Lucia,2,LXOUJ,Luxury Junior Suite Ocean View (1 Handicap),102,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Saint Lucia,3,LXOUJD,Luxury Junior Suite Ocean View Dc (1 Handicap),36,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Saint Lucia,4,LXUWJ,Luxury Junior Suite Swim Out,40,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Saint Lucia,5,LXUWJD,Luxury Junior Suite Swim Out Dc,10,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Saint Lucia,6,LFUUS,Luxury Family Suite Ocean View,40,1 King + 1 Sofa,1,4,3,3,
+Royalton Saint Lucia,7,LFOUSD,Luxury Family Suite Ocean View Dc,8,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Saint Lucia,8,LPOU1,Luxury Presidential One Bedroom Ocean View,3,1 King + 1 Sofa,1,4,3,3,
+Royalton Saint Lucia,9,LPOU1D,Luxury Presidential One Bedroom Ocean View Dc,8,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Saint Lucia,10,LPUW1D,Luxury Presidential One Bedroom Swim Out Dc,2,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Saint Lucia,11,PHOJ1D,Luxury Penthouse One Bedroom Suite Ocean View Terrace Jacuzzi Dc,8,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Saint Lucia,12,CMFU2D,Luxury Chairman Two Bedroom Ocean Front Suite Dc,4,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Saint Lucia,13,CMFW2D,Luxury Chairman Two Bedroom Ocean Front Swim Out Suite Dc,1,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Antigua,1,LXUUJ,Luxury Junior Suite,76,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Royalton Antigua,2,LXOUJ,Luxury Junior Suite Bay View (2 Handicap),124,1 King / 2 Queen,1,4,4,2,
+Royalton Antigua,3,LXUUJD,Luxury Junior Suite Dc,20,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Antigua,4,LXOUJD,Luxury Junior Suite Bay View Dc,44,1 King / 2 Queen,1,4,4,2,Diamond Club
+Royalton Antigua,5,LXUWJD,Luxury Junior Suite Swim Out Dc,22,1 King / 2 Queen,1,4,4,2,Diamond Club
+Royalton Antigua,6,CMUOB,Chairmans Overwater Bungalows Dc,6,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Antigua,1,LQGUR,Luxury Garden View Room,57,2 Queen / 1 King,1,3,3,N/A,
+Royalton Chic Antigua,3,LQUUR,Luxury Pool View Room,67,2 Queen / 1 King,1,3,3,N/A,
+Royalton Chic Antigua,4,LQOUR,Luxury Ocean View Room,8,2 Queen / 1 King,1,3,3,N/A,
+Royalton Chic Antigua,5,LQOURD,Luxury Garden View Room Diamond Club,32,2 Queen / 1 King,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,6,LQFURD,Luxury Beach Front Room Diamond Club,50,2 Queen / 1 King,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,7,LQOWJD,Luxury Junior Suite Beach Front Swim Out Diamond Club,10,2 Queen / 1 King,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,8,LPOU1D,Luxury Presidential Beach Front One Bedroom Suite Diamond Club,5,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,9,LPFU1D,Luxury Presidential Ocean Front One Bedroom Suite Diamond Club,2,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,10,LPFK1D,Luxury Presidential Beach Front Walkout One Bedroom Suite Diamond Club,2,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,11,LPOW1D,Luxury Presidential Beach Front Swim Out One Bedroom Suite Diamond Club,1,1 King + 1 Sofa Bed,1,3,3,N/A,Diamond Club
+Royalton Chic Antigua,12,LKUOBD,Luxury Junior Sunset Overwater Suite Diamond Club,4,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Antigua,13,LPUOBD,Luxury Presidential Sunset Overwater Suite Diamond Club,4,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Antigua,14,CMUOBD,Chairman Sunset Overwater Bungalow Two Bedroom Suite Diamond Club,Virtual,2 King,1,4,4,N/A,Diamond Club
+Royalton Grenada,1,LXUUR,Luxury Room (2 Handicap),78,1 King / 2 Queen,1,4,4,2,
+Royalton Grenada,2,LXUUJ,Luxury Junior Suite,20,1 King + Sofa,1,3,2,2,
+Royalton Grenada,3,LXOUR,Luxury Ocean View Room,48,1 King / 2 Queen,1,4,4,2,
+Royalton Grenada,4,LXFUR,Luxury Room Ocean Front,38,1 King / 2 Queen,1,4,4,2,
+Royalton Grenada,5,LXFKRD,Luxury Room Beach Walkout Diamond Club,17,1 King / 2 Queen,1,3,2,1 (0-2),Diamond Club
+Royalton Grenada,6,LXFUJD,Luxury Junior Suite Ocean Front Dc,39,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Grenada,7,LXFWJD,Luxury Junior Suite Ocean Front Swim Out Dc,13,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Grenada,8,LPOU1D,Luxury Presidential Ocean View One Bedroom Suite Dc,10,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Grenada,9,LPOU2D,Luxury Presidential Ocean View Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + 2 Sofa,1,8,6,4,Diamond Club
+Royalton Grenada,10,LPFU1D,Luxury Presidential Ocean Front One Bedroom Suite Dc,4,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Grenada,11,LPFU2D,Luxury Presidential Ocean Front Two Bedrooms Suite Dc,Virtual,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Grenada,12,CMFU2D,Luxury Chairmans Two Bedrooms Suite Ocean Front Dc,1,1 King + 2 Queen + 2 Sofa,1,8,6,4,Diamond Club
+Royalton Grenada,13,CMFU3D,Luxury Chairmans Three Bedrooms Ocean Front Suite Dc,Virtual,1 King + 4 Queen + 2 Sofa / 2 King + 2 Queen + 2 Sofa,1,10,8,6,Diamond Club
+Royalton Grenada,14,CMFU4D,Luxury Chairmans Four Bedrooms Ocean Front Suite Dc,Virtual,2 King + 4 Queen + 2 Sofa,1,16,12,8,Diamond Club
+Royalton Chic Barbados,1,LXUUJ,Luxury Junior Suite (Handicapped),121,2 Queen + Sofa,1,3,3,N/A,
+Royalton Chic Barbados,2,LXOUJ,Luxury Junior Suite Ocean View,0,2 Queen + Sofa,1,3,3,N/A,
+Royalton Chic Barbados,3,LXUUJD,Luxury Junior Suite Diamond Club,58,2 Queen + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,4,LXOUJD,Luxury Junior Suite Ocean View Diamond Club,0,2 Queen + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,5,LXUWJ,Luxury Junior Suite Swim Out,18,2 Queen + Sofa,1,3,3,N/A,
+Royalton Chic Barbados,6,LXUWJD,Luxury Junior Suite Swim Out Diamond Club,8,2 Queen + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,7,LPUU1D,Luxury Presidential One Bedroom Suite Diamond Club,13,1 King + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,8,LPOU1D,Luxury Presidential Ocean View One Bedroom Suite Diamond Club,0,1 King + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,9,LPFU1D,Luxury Presidential Ocean Front One Bedroom Suite Diamond Club,0,1 King + Sofa,1,3,3,N/A,Diamond Club
+Royalton Chic Barbados,10,CMFU2D,Luxury Chairman Ocean Front Two Bedroom Suite Diamond Club,2,1 King + 2 Queen + 1 Sofa,1,4,4,N/A,Diamond Club
+Royalton Hideaway Punta Cana,1,LXUUR,Luxury Room,95,1 King + 1 Sofa / 2 Queen,1,4,4,N/A,
+Royalton Hideaway Punta Cana,2,LXUURD,Luxury Room Dc,27,1 King + 1 Sofa / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Punta Cana,3,LXOURD,Luxury Ocean View Room Dc,22,1 King + 1 Sofa / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Punta Cana,4,LXUWRD,Luxury Swim Out Room Dc,20,1 King + 1 Sofa / 2 Queen,1,4,4,N/A,Diamond Club
+Royalton Hideaway Punta Cana,5,HMUZSD,Honeymoon Jacuzzi Suite Dc,4,1 King,1,2,2,N/A,Diamond Club
+Royalton Punta Cana,1,LXUUR,Luxury Room (2 Handicap),166,1 King + 1 Sofa / 2 Queen,1,4,4,2,
+Royalton Punta Cana,2,LXUURD,Luxury Room Dc,95,1 King + 1 Sofa / 2 Queen,1,4,4,2,Diamond Club
+Royalton Punta Cana,3,LXOURD,Luxury Ocean View Room Dc,12,1 King + 1 Sofa / 2 Queen,1,4,4,2,Diamond Club
+Royalton Punta Cana,4,LXUWRD,Luxury Swim Out Room Dc,25,1 King + 1 Sofa / 2 Queen,1,4,4,2,Diamond Club
+Royalton Punta Cana,5,HMFZSD,Honeymoon Jacuzzi Suite Dc,2,1 King,1,2,2,N/A,Diamond Club
+Royalton Punta Cana,6,LPUZ1D,Luxury Presidential Jacuzzi One Bedroom Suite Dc,10,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Punta Cana,7,LPUZ2D,Luxury Presidential Jacuzzi Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + Sofa,1,8,6,4,Diamond Club
+Royalton Punta Cana,8,LPUY1D,Luxury Presidential Jacuzzi Swim Out One Bedroom Suite Dc,3,1 King + Sofa,1,4,3,3,Diamond Club
+Royalton Punta Cana,9,LPUY2D,Luxury Presidential Jacuzzi Swim Out Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + Sofa,1,8,6,4,Diamond Club
+Royalton Punta Cana,10,CMFU2D,Luxury Chairman Two Bedroom Suite Ocean Front Suite Dc,2,1 King + 2 Queen + Sofa,1,8,6,4,Diamond Club
+Royalton Splash Punta Cana,1,PRUUR,Luxury Room,360,1 King / 2 Queen,1,4,4,2,
+Royalton Splash Punta Cana,2,DFUUS,Luxury Family Room,32,1 King + 1 Bunk Bed,1,5,4,3,
+Royalton Splash Punta Cana,3,PRUURD,Luxury Room Dc (4 Handicap),79,1 King / 2 Queen,1,4,4,2,Diamond Club
+Royalton Splash Punta Cana,4,DFUUSD,Luxury Family Room Diamond Club,16,1 King + 1 Bunk Bed,1,5,4,3,Diamond Club
+Royalton Splash Punta Cana,5,PRUZJD,Luxury Jacuzzi Junior Suite Diamond Club,26,1 King / 2 Queen,1,4,4,2,Diamond Club
+Royalton Splash Punta Cana,6,PSUZ1D,Luxury Presidential Jacuzzi One Bedroom Suite Diamond Club,12,1 King + Sofa Bed,1,4,3,2,Diamond Club
+Royalton Bavaro,1,LXUUJ,Luxury Junior Suite (2 Handicap),299,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Royalton Bavaro,2,LXUUJD,Luxury Junior Suite Dc,14,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Bavaro,3,LXOUJ,Luxury Junior Suite Ocean View,32,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Royalton Bavaro,4,LXOUJD,Luxury Junior Suite Ocean View Dc,26,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Bavaro,5,LXUWJ,Luxury Junior Suite Swim Out (3 Handicap),148,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Royalton Bavaro,6,LXUWJD,Luxury Junior Suite Swim Out Dc,44,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Diamond Club
+Royalton Bavaro,7,LFUUS,Luxury Family Suite,71,1 King + 1 Sofa,1,4,3,3,
+Royalton Bavaro,8,LFOUSD,Luxury Family Suite Ocean View Dc,28,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Bavaro,9,LPUU1,Luxury Presidential One Bedroom Suite,47,1 King + 1 Sofa,1,4,3,3,
+Royalton Bavaro,10,LPUU2,Luxury Presidential Two Bedroom Suite,Virtual,1 King + 2 Queen + 3 Sofa,1,8,6,4,
+Royalton Bavaro,11,LPUU1D,Luxury Presidential One Bedroom Suite Dc,16,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Bavaro,12,LPUU2D,Luxury Presidential Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + 2 Sofa,1,8,6,4,Diamond Club
+Royalton Bavaro,13,CMFU2D,Luxury Chairman'S Two Bedroom Suite Ocean Front Dc,3,1 King + 2 Queen,1,6,6,4,Diamond Club
+Royalton Bavaro,14,CMFU3D,Luxury Chairman'S Three Bedroom Suite Ocean Front Dc,Virtual,2 King + 2 Queen + 1 Sofa / 1 King + 4 Queen + 1 Sofa,1,10,8,6,Diamond Club
+Royalton Bavaro,15,CMFU4D,Luxury Chairman'S Four Bedroom Suite Ocean Front Dc,Virtual,,1,12,12,8,Diamond Club
+Royalton Bavaro,16,CMUW2D,Luxury Chairman'S Two Bedroom Suite Swim Out Dc,1,1 King + 2 Queen,1,6,6,4,Diamond Club
+Royalton Bavaro,17,CMUW3D,Luxury Chairman'S Three Bedroom Swim Out Front Dc,Virtual,\ 1 King,1,10,8,6,Diamond Club
+Royalton Bavaro,18,CMUW4D,Luxury Chairman'S Four Bedroom Swim Out Front Dc,Virtual,,1,12,12,8,Diamond Club
+Royalton Chic Punta Cana,1,LXUUR,Luxury Room,192,1 King,1,2,2,N/A,
+Royalton Chic Punta Cana,2,LXUUJ,Luxury Junior Suite (1 Handicap),28,2 Queen,1,4,4,N/A,
+Royalton Chic Punta Cana,3,LXOUJD,Luxury Junior Suite Ocean View Dc,47,2 Queen / 1 King,1,4,4,N/A,Diamond Club
+Royalton Chic Punta Cana,4,LXUWJD,Luxury Junior Suite Swim Out Dc,26,1 King / 2 Queen,1,2,2,N/A,Diamond Club
+Royalton Chic Punta Cana,5,LPUU1D,Luxury Presidential One Bedroom Suite Dc,23,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Punta Cana,6,LPFT1D,Luxury Presidential Ocean Front Terrace One Bedroom Suite Dc,1,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Punta Cana,7,LPFW1D,Luxury Presidential Ocean Front Swim Out One Bedroom Suite Dc,1,1 King,1,2,2,N/A,Diamond Club
+Royalton Chic Punta Cana,8,MNUU6D,The Mansion,1,5 King + 2 Queen,1,12,12,N/A,The Mansion
+Royalton Riviera Cancun,1,LXUUJ,Luxury Junior Suite (5 Handicap),294,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Riviera Cancun,2,LXUZS,Luxury Suite With Terrace Jacuzzi,61,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Riviera Cancun,3,LXOUJ,Luxury Junior Suite Ocean View,75,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Riviera Cancun,4,LXOUJD,Luxury Junior Suite Ocean View Dc,40,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Riviera Cancun,5,LXOZS,Luxury Suite Ocean View With Terrace Jacuzzi,60,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Riviera Cancun,6,LXOZSD,Luxury Suite Ocean View With Terrace Jacuzzi Dc,64,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Riviera Cancun,7,LXUWJ,Luxury Junior Suite Swim Out,69,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Royalton Riviera Cancun,8,LXUWJD,Luxury Junior Suite Swim Out Dc,40,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Diamond Club
+Royalton Riviera Cancun,9,LFOUS,Luxury Family Suite Ocean View,31,1 King + 1 Sofa,1,4,3,3,
+Royalton Riviera Cancun,10,LFOUSD,Luxury Family Suite Ocean View Dc,17,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Riviera Cancun,11,LPUU1D,Luxury Presidential One Bedroom Suite Dc,15,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Riviera Cancun,12,LPOU1,Luxury Presidential One Bedroom Suite Ocean View,21,1 King + 1 Sofa,1,4,3,3,
+Royalton Riviera Cancun,13,LPOU2,Luxury Presidential Two Bedroom Suite Ocean View,Virtual,1 King + 2 Queen + 1 Sofa,1,8,6,4,
+Royalton Riviera Cancun,14,LPOZ1D,Luxury Presidential One Bedroom Suite Ocean View Dc,23,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Riviera Cancun,15,LPOZ2D,Luxury Presidential Two Bedroom Suite Ocean View Dc,Virtual,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Riviera Cancun,16,LPUW1,Luxury Presidential One Bedroom Suite Swim Out,7,1 King + 1 Sofa,1,4,3,3,
+Royalton Riviera Cancun,17,LPUW2,Luxury Presidential Two Bedroom Suite Swim Out,Virtual,1 King + 2 Queen + 1 Sofa,1,8,6,4,
+Royalton Riviera Cancun,18,LPUW1D,Luxury Presidential One Bedroom Suite Swim Out Dc,9,1 King + 1 Sofa,1,4,3,3,Diamond Club
+Royalton Riviera Cancun,19,LPUW2D,Luxury Presidential Two Bedroom Suite Swim Out Dc,Virtual,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Riviera Cancun,20,LPOR1,Luxury Presidential One Bedroom Suite Ocean View Rooftop Pool,4,1 King + 1 Sofa,1,4,3,3,
+Royalton Riviera Cancun,21,CMFU2D,Luxury Chairman´S Two Bedroom Suite Ocean Front Dc,3,1 King + 2 Queen + 1 Sofa,1,8,6,4,Diamond Club
+Royalton Riviera Cancun,22,CMFU3D,Luxury Chairman´S Three Bedroom Suite Ocean Front Dc,Virtual,1 King + 4 Queen + 1 Sofa,1,12,10,6,Diamond Club
+Royalton Hideaway Riviera Cancun,1,LXUUJ,Luxury Junior Suite,132,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,2,LXUUJD,Luxury Junior Suite Dc,32,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton Hideaway Riviera Cancun,3,LXUZS,Luxury Suite With Terrace Jacuzzi,44,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,4,LXOUJ,Luxury Junior Suite Ocean View,15,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,5,LXOUJD,Luxury Junior Suite Ocean View Dc,12,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton Hideaway Riviera Cancun,6,LXOZS,Luxury Suite Ocean View With Terrace Jacuzzi,21,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,7,LXOZSD,Luxury Suite Ocean View With Terrace Jacuzzi Dc,28,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton Hideaway Riviera Cancun,8,LXUWJ,Luxury Junior Suite Swim Out,18,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,9,LXUWS,Luxury Suite Swim Out,18,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton Hideaway Riviera Cancun,10,LXOWSD,Luxury Suite Swim Out Dc,6,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton Hideaway Riviera Cancun,11,HMOUSD,Honeymoon Suite Ocean View Dc,7,1 King,1,2,2,N/A,Diamond Club
+Royalton Hideaway Riviera Cancun,12,LPOU1D,Luxury Presidential One Bedroom Suite Ocean View Dc,10,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton Splash Riviera Cancun,1,LXUUJ,Luxury Junior Suite (6 Handicap),371,1 King / 2 Queen + Sofa Bed,1,4,4,3,
+Royalton Splash Riviera Cancun,2,LXOUJ,Luxury Junior Suite Ocean View,117,1 King / 2 Queen + Sofa Bed,1,4,4,3,
+Royalton Splash Riviera Cancun,3,LXFUJ,Luxury Junior Suite Ocean Front,106,1 King / 2 Queen + Sofa Bed,1,4,4,3,
+Royalton Splash Riviera Cancun,4,LXFZJ,Luxury Junior Suite Ocean Front Terrace Jacuzzi,56,1 King / 2 Queen + Sofa Bed,1,4,4,3,
+Royalton Splash Riviera Cancun,5,LXUWJ,Luxury Junior Suite Swim Out,59,1 King / 2 Queen + Sofa Bed,1,4,4,3,
+Royalton Splash Riviera Cancun,6,LXUU2,Two Bedroom Luxury Junior Suite,14,1 King + 2 Queen + 2 Sofa,1,8,8,6,
+Royalton Splash Riviera Cancun,7,LXOUJD,Luxury Junior Suite Ocean View Diamond Club,80,2 Queen + Sofa Bed / 1 King,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,8,LXFUJD,Luxury Junior Suite Ocean Front Diamond Club,62,2 Queen + Sofa Bed / 1 King,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,9,LXFZJD,Luxury Junior Suite Ocean Front Terrace Jacuzzi Diamond Club,33,1 King / 2 Queen + Sofa Bed,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,10,LXUWJD,Luxury Junior Suite Swim Out Diamond Club,33,2 Queen + Sofa Bed / 1 King,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,11,LXFWJD,Luxury Junior Suite Ocean Front Swim Out Diamond Club,23,1 King / 2 Queen + Sofa Bed,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,12,LXOU2D,Two Bedroom Luxury Junior Suite Ocean View Diamond Club,8,1 King + 2 Queen + 2 Sofa,1,8,8,6,Diamond Club
+Royalton Splash Riviera Cancun,13,LXFU2D,Two Bedroom Luxury Junior Suite Ocean Front Diamond Club,22,1 King + 2 Queen + 2 Sofa,1,8,8,6,Diamond Club
+Royalton Splash Riviera Cancun,14,LPFU1D,Luxury Presidential Ocean Front One Bedroom Suite Diamond Club,15,1 King + 1 Sofa Bed,1,4,4,3,Diamond Club
+Royalton Splash Riviera Cancun,15,SCFU2D,Luxury Sky Chairman Suite Two Bedroom Ocean Front Diamond Club,4,1 King + 2 Queen + 1 Sofa,1,8,7,6,Diamond Club
+Royalton Splash Riviera Cancun,16,CMFU2D,Luxury Chairman Two Bedroom Suite Ocean Front Diamond Club,1,1 King + 2 Queen + 2 Sofa,1,10,8,8,Diamond Club
+Mystique Holbox by Royalton,1,DXUUJ,Deluxe Junior Suite,16,1 King + Sofa / 2 Queen,1,4,3,2,
+Mystique Holbox by Royalton,2,DXOUJ,Deluxe Junior Suite Pool View,8,1 King + Sofa,1,4,3,2,
+Mystique Holbox by Royalton,3,DXORJ,Deluxe Junior Suite Loft Ocean View,6,1 King + Sofa / 2 Queen,1,4,3,2,
+Mystique Holbox by Royalton,4,DXFUJ,Deluxe Junior Suite Partial Ocean View,2,1 King + 1 Sofa,1,4,3,2,
+Mystique Holbox by Royalton,5,DXFWJ,Deluxe Junior Suite Swim Out,2,1 King + 1 Sofa,1,4,3,2,
+Mystique Holbox by Royalton,6,PRFUJ,Premium Junior Suite Ocean Front,2,1 King + 1 Sofa,1,4,3,2,
+Mystique Holbox by Royalton,7,LPOU1,Presidential Ocean Front One Bedroom Suite,1,1 King + 1 Sofa,1,4,3,2,
+Royalton CHIC Cancun,1,LXUUJ,Luxury Junior Suite Sunset View (4 Handicap),128,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton CHIC Cancun,2,LXUUJD,Luxury Junior Suite Sunset View Dc (1 Handicap),71,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton CHIC Cancun,3,LXOUJ,Luxury Junior Suite Ocean Front,155,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,
+Royalton CHIC Cancun,4,LXOUJD,Luxury Junior Suite Ocean Front Diamond Club,68,1 King + Sofa / 2 Queen + Sofa,1,4,4,N/A,Diamond Club
+Royalton CHIC Cancun,5,LFUUS,Luxury Suite Sunset View,5,1 King + 1 Sofa,1,3,3,N/A,
+Royalton CHIC Cancun,6,LFOUS,Luxury Suite Ocean Front,5,1 King + 1 Sofa,1,3,3,N/A,
+Royalton CHIC Cancun,7,LPOU1D,Luxury Presidential Ocean Front One Bedroom Suite Dc,9,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton CHIC Cancun,8,LPOU2D,Luxury Presidential Ocean Front Two Bedroom Suite Dc,Virtual,1 King + 2 Queen + Sofa,1,7,7,N/A,Diamond Club
+Royalton CHIC Cancun,9,LPUU1D,Luxury Presidential One Bedroom Suite Sunset View Dc,12,1 King + 1 Sofa,1,3,3,N/A,Diamond Club
+Royalton CHIC Cancun,10,LPUU2D,Luxury Presidential Two Bedroom Suite Sunset View Dc,Virtual,1 King + 2 Queen + 1 Sofa,1,7,7,N/A,Diamond Club
+Royalton CHIC Cancun,11,CMFU2D,Luxury Chairmans Two Bedroom Suite Ocean Front Dc,4,1 King + 2 Queen + 1 Sofa,1,7,7,N/A,Diamond Club
+Royalton CHIC Cancun,12,CMFU3D,Luxury Chairmans Three Bedroom Suite Ocean Front Dc,Virtual,1 King + 4 Queen + 1 Sofa,1,11,11,N/A,Diamond Club
+Royalton CHIC Cancun,13,CMFU4D,Luxury Chairmans Four Bedroom Suite Ocean Front Dc,Virtual,2 King + 4 Queen + Sofa Bed,1,13,13,N/A,Diamond Club
+Planet Hollywood Adult Scene,1,LXUUJ,Junior Suite (1 Handicap-Connecting),224,1 King / 2 Queen + Sofa Bed,1,4,4,N/A,
+Planet Hollywood Adult Scene,2,LXUUJD,Star Class Junior Suite,28,1 King / 2 Queen + Sofa,1,4,4,N/A,Star Class
+Planet Hollywood Adult Scene,3,LXOUJD,Star Class Junior Suite Ocean View,16,1 King + Sofa Bed,1,4,4,N/A,Star Class
+Planet Hollywood Adult Scene,4,LXUWJ,Junior Suite Swim Out,68,1 King / 2 Queen + Sofa,1,4,4,N/A,
+Planet Hollywood Adult Scene,5,LXUWJD,Star Class Junior Suite Swim Out,14,1 King / 2 Queen + Sofa,1,4,4,N/A,Star Class
+Planet Hollywood Adult Scene,6,LPUU1,Directors Suite One Bedroom,24,1 King + Sofa,1,3,3,N/A,
+Planet Hollywood Adult Scene,7,LPUU1D,Star Class Directors Suite One Bedroom,6,1 King + Sofa,1,3,3,N/A,Star Class
+Planet Hollywood Cancun,1,LXUUJ,Junior Suite (3 Handicap - Connecting),298,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Planet Hollywood Cancun,2,LXUUJD,Star Class Junior Suite (1 Handicap - Connecting),72,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Star Class
+Planet Hollywood Cancun,3,LXOUJ,Junior Suite Ocean View,36,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Planet Hollywood Cancun,4,LXOUJD,Star Class Junior Suite Ocean View,12,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Star Class
+Planet Hollywood Cancun,5,LXUWJ,Junior Suite Swim Out,45,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,
+Planet Hollywood Cancun,6,LXUWJD,Star Class Junior Suite Swim Out,24,1 King + Sofa / 2 Queen + Sofa,1,4,4,3,Star Class
+Planet Hollywood Cancun,7,LFUUS,Entourage Suite,60,1 King + 1 Sofa,1,4,3,3,
+Planet Hollywood Cancun,8,LFUUSD,Star Class Entourage Suite,24,1 King + 1 Sofa,1,4,3,3,Star Class
+Planet Hollywood Cancun,9,LPUU1,Directors Suite One Bedroom,52,1 King + 1 Sofa,1,4,3,3,
+Planet Hollywood Cancun,10,LPUU2,Directors Suite Two Bedroom,Virtual,1 King + 2 Queen + Sofa,1,8,6,4,
+Planet Hollywood Cancun,11,LPUU1D,Star Class Directors Suite One Bedroom,14,1 King + 1 Sofa,1,4,3,3,Star Class
+Planet Hollywood Cancun,12,LPUU2D,Star Class Directors Suite Two Bedroom,Virtual,1 King + 2 Queen + Sofa,1,8,6,4,Star Class
+Planet Hollywood Cancun,13,LPUW1D,Star Class Directors Suite One Bedroom Swim Out,6,1 King + 1 Sofa,1,4,3,3,Star Class
+Planet Hollywood Cancun,14,CMUU2D,Star Class Producers Two Bedroom Suite,3,1 King + 2 Queen + Sofa,1,8,6,4,Star Class
+Planet Hollywood Cancun,15,CMUU3D,Star Class Producers Three Bedroom Suite,Virtual,"2 King + 2 Queen + 1 Sofa
+1 King + 4 Queen + 1 Sofa",1,12,10,6,Star Class
+Planet Hollywood Cancun,16,CMUW2D,Star Class Producers Two Bedroom Suite Swim Out,1,1 King + 2 Queen + Sofa,1,8,6,4,Star Class
+Planet Hollywood Costa Rica,1,LXUUJ,Junior Suite (1 Handicap),98,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Planet Hollywood Costa Rica,2,LXUUJD,Star Class Junior Suite,30,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Star Class
+Planet Hollywood Costa Rica,3,LXOUJ,Junior Suite Ocean View (3 Handicap),77,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,
+Planet Hollywood Costa Rica,4,LXOUJD,Star Class Junior Suite Ocean View,62,1 King + Sofa / 2 Queen + Sofa,1,4,4,2,Star Class
+Planet Hollywood Costa Rica,5,LPUU1D,Star Class,23,1 King + Sofa Bed,1,4,3,2,Star Class
+Planet Hollywood Costa Rica,6,LPUU2D,Star Class,Virtual,1 King + 2 Queen + Sofa Bed,1,8,6,4,Star Class
+Planet Hollywood Costa Rica,7,CMUUSD,Star Class Producer's Suite,2,1 King + 2 Queen + Sofa Bed,1,8,6,4,Star Class
+Royalton Reserve Paraíso de la Bonita,1,LKFUS,Master Suite Ocean Front - KING,40,King,1,2,2,N/A,
+Royalton Reserve Paraíso de la Bonita,2,LQFUS,Master Suite Ocean Front - DBL,11,2 Queen,1,4,4,N/A,
+Royalton Reserve Paraíso de la Bonita,3,LKFWS,Master Suite Ocean Front Private Pool King,10,King,1,2,2,N/A,
+Royalton Reserve Paraíso de la Bonita,4,LQFWS,Master Suite Ocean Front Private Pool - DBL,6,2 Queen,1,4,4,N/A,
+Royalton Reserve Paraíso de la Bonita,5,LKFWSD,Master Suite Ocean Front Private Pool King Diamond Club,10,2 King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,6,LXFWHSD,Master Luxury Suite Ocean Front Private Pool & Outdoor Shower DC,5,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,7,LXFUS2D,Master Suite Ocean Front Two bedroom DC,4,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,8,LPFW2D,Presidential Suite Ocean Front Two bedroom Private Pool DC,3,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,9,LPFWM2D,Master Presidential Suite Ocean Front Private Pool Two bedroom DC,1,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,10,LXFUSD,Luxury Suite Ocean Front King with Private Pool & Outdoor Shower with DC,4,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,11,CMOW1D,Chairman One bedroom Luxury Suite Ocean Front Private Pool & Outdoor shower,4,King,1,2,2,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,12,CMOP2D,Chairman Two bedroom suite Ocean Front Infinity & Private Pool Outdoor shower,1,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,13,CMFP2D,Chairman Two Bedroom Oceanfront Suite Four Terraces Private Outdoor Shower,Virtual,2 King,1,4,4,N/A,Diamond Club
+Royalton Reserve Paraíso de la Bonita,14,CMOP3D,Chairman Three bedroom Suite Ocean Front Infinity Private Pool Outdoor Shower,1,3 King,1,6,6,N/A,Diamond Club
+Royalton Vessence Cancun,1,LKUUR,Luxury Room,7,1 King,1,2,2,,
+Royalton Vessence Cancun,2,LQUUR,Luxury Room Two Queen,7,2 Queen,1,4,4,,
+Royalton Vessence Cancun,3,LKXUUJ,Luxury Junior Suite King,24,1 King,1,2,2,,
+Royalton Vessence Cancun,4,LQXUUJ,Luxury Junior Suite Two Queen,14,2 Queen,1,4,4,,
+Royalton Vessence Cancun,5,LKXOUJ,Luxury Junior Suite Ocean View King,48,1 King,1,2,2,,
+Royalton Vessence Cancun,6,LQXOUJ,Luxury Junior Suite Ocean View Two Queen,28,2 Queen,1,4,4,,
+Royalton Vessence Cancun,7,LKXUWJ,Luxury Junior Suite Swim Out,12,1 King,1,2,2,,
+Royalton Vessence Cancun,8,LQXUWJ,Luxury Junior Suite Swim Out Two Queen,12,2 Queen,1,4,4,,
+Royalton Vessence Cancun,9,LKXFUJ,Luxury Junior Suite Ocean Front,27,1 king,1,2,2,,
+Royalton Vessence Cancun,10,LQXFUJ,Luxury Junior Suite Ocean Front Two Queen,18,2 Queen,1,4,4,,
+Royalton Vessence Cancun,11,LKXFWJ,Luxury Junior Suite Swim Out Ocean Front,6,1 king,1,2,2,,
+Royalton Vessence Cancun,12,LQXFWJ,Luxury Junior Suite Swim Out Ocean Front Two Queen,4,2 Queen,1,4,4,,
+Royalton Vessence Cancun,13,LPUU1D,Luxury Presidential Multi-Bed Suite with Butler,32,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,14,LPOU1D,Luxury Presidential Multi-Bed Ocean View Suite with Butler,76,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,15,LPUW1D,Luxury Presidential Multi-Bed Swim Out Suite with Butler,6,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,16,LPFU1D,Luxury Presidential Multi-Bed Ocean Front Suite with Butler,45,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,17,LPFW1D,Luxury Presidential Multi-Bed Swim Out Ocean Front Suite with Butler,10,1 King + 1 Murphy Bed,1,4,4,,Diamond Club
+Royalton Vessence Cancun,18,LPUU2D,Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,19,LPOU2D,Luxury Presidential Multi-Bed Ocean View Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,20,LPUW2D,Luxury Presidential Multi-Bed Swim Out Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,21,LPFU2D,Luxury Presidential Multi-Bed Ocean Front Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+Royalton Vessence Cancun,22,LPFW2D,Luxury Presidential Multi-Bed Swim Out Ocean Front Two Bedroom Suite with Butler,Virtual,1 king + 2 queen + Murphy Bed,1,8,8,,Diamond Club
+The Westin Cancun,1,GRL,Guest Room Lagoon View,Virtual,,,,,,
+The Westin Cancun,2,GRO,Guest Room Ocean View,Virtual,,,,,,
+The Westin Cancun,3,DGRL,Deluxe Guest Room Lagoon View,Virtual,,,,,,
+The Westin Cancun,4,DGRO,Deluxe Guest Room Ocean View,Virtual,,,,,,
+The Westin Cancun,5,STL,Studio Lagoon View,Virtual,,,,,,
+The Westin Cancun,6,STO,Studio Ocean View,Virtual,,,,,,
+The Westin Cancun,7,JRS,Junior Suite,Virtual,,,,,,
+The Westin Cancun,8,TBVL,Two Bedroom Villa Lagoon View,Virtual,,,,,,
+The Westin Cancun,9,TBVO,Two Bedroom Villa Ocean View,Virtual,,,,,,
+The Westin Cancun,10,MSTE,Master Suite,Virtual,,,,,,
+The Westin Cancun,11,AMBS,Ambassador Suite,Virtual,,,,,,
+The Westin Cancun,12,PRES,Presidential Suite,Virtual,,,,,,

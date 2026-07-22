@@ -6,6 +6,9 @@ export interface Selection {
   brandId: string;
   hotelId?: string;
   categoryId?: string;
+  // Only meaningful alongside categoryId "accommodations" — pre-applies the
+  // room type filter when jumping in directly from a search suggestion.
+  roomType?: string;
 }
 
 export function TreeSidebar({
@@ -42,7 +45,10 @@ export function TreeSidebar({
               <span className="tree__caret">{isExpanded ? "▾" : "▸"}</span>
               {brand.name}
             </button>
-            {isExpanded && (
+            {isExpanded && brand.hotels.length === 0 && (
+              <div className="tree__empty">No resorts yet</div>
+            )}
+            {isExpanded && brand.hotels.length > 0 && (
               <div className="tree__hotels">
                 {brand.hotels.map((hotel) => {
                   const hotelExpanded = expandedHotel === hotel.id;

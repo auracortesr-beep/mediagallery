@@ -1,0 +1,255 @@
+.upload-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(20, 18, 14, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.upload-modal__card {
+  background: #fffdf8;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.upload-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid #e3ded2;
+}
+
+.upload-modal__header h2 {
+  margin: 0;
+  font-size: 17px;
+  color: #1a1a1a;
+}
+
+.upload-modal__close {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #7a7568;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.upload-modal__close:hover {
+  color: #1a1a1a;
+}
+
+.upload-modal__body {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.upload-modal__field-row {
+  display: flex;
+  gap: 14px;
+}
+
+.upload-modal__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #4a4640;
+}
+
+.upload-modal__field select,
+.upload-modal__field input[type="text"] {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a1a1a;
+  padding: 8px 10px;
+  border-radius: 7px;
+  border: 1px solid #d7d3ca;
+  background: #fff;
+}
+
+.upload-modal__field select:disabled {
+  background: #f3f1ec;
+  color: #a39c8b;
+}
+
+.upload-modal__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.upload-modal__hint {
+  margin: -6px 0 0;
+  font-size: 12.5px;
+  color: #8a8371;
+  background: #f3f1ec;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.upload-modal__dropzone {
+  border: 2px dashed #c9c2b0;
+  border-radius: 10px;
+  padding: 28px 16px;
+  text-align: center;
+  color: #7a7568;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition:
+    border-color 0.12s ease,
+    background 0.12s ease;
+}
+
+.upload-modal__dropzone:hover,
+.upload-modal__dropzone--active {
+  border-color: #004a63;
+  background: #eef2f0;
+}
+
+.upload-modal__dropzone--filled {
+  cursor: default;
+  padding: 14px;
+}
+
+.upload-modal__dropzone-icon {
+  font-size: 22px;
+  color: #004a63;
+  margin-bottom: 6px;
+}
+
+.upload-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 8px;
+}
+
+.upload-modal__thumb {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.upload-modal__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.upload-modal__thumb-remove {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.upload-modal__thumb-remove:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.upload-modal__add-more {
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1.5px dashed #c9c2b0;
+  background: none;
+  color: #7a7568;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.upload-modal__add-more:hover {
+  border-color: #004a63;
+  color: #004a63;
+}
+
+.upload-modal__batch-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  color: #7a7568;
+  margin-top: -8px;
+}
+
+.upload-modal__clear {
+  border: none;
+  background: none;
+  color: #004a63;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.upload-modal__clear:hover {
+  text-decoration: underline;
+}
+
+.upload-modal__progress {
+  height: 6px;
+  border-radius: 3px;
+  background: #e3ded2;
+  overflow: hidden;
+}
+
+.upload-modal__progress-bar {
+  height: 100%;
+  background: #004a63;
+  transition: width 0.15s ease;
+}
+
+.upload-modal__error {
+  margin: 0;
+  font-size: 13px;
+  color: #b3261e;
+}
+
+.upload-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 22px;
+  border-top: 1px solid #e3ded2;
+}
+
+.upload-modal__footer .btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.upload-modal__footer .btn:not(.btn--primary) {
+  background: #fff;
+  color: #4a4640;
+  border: 1px solid #d7d3ca;
+}
+
+.upload-modal__footer .btn:not(.btn--primary):hover {
+  background: #f3f1ec;
+}
