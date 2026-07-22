@@ -1,15 +1,34 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BRANDS } from "../data/mockData";
 import type { Selection } from "./TreeSidebar";
 import { uploadPhoto } from "../lib/uploadApi";
 import { addUploadedPhoto, uploadKey } from "../state/uploadStore";
 import "./UploadModal.css";
 
+const BATCH_CONCURRENCY = 4;
+
 function parseTags(raw: string): string[] {
   return raw
     .split(/[,;]/)
     .map((t) => t.trim())
     .filter(Boolean);
+}
+
+async function runBatch<T>(items: T[], concurrency: number, worker: (item: T) => Promise<void>): Promise<void> {
+  let nextIndex = 0;
+  async function runNext(): Promise<void> {
+    const i = nextIndex++;
+    if (i >= items.length) return;
+    await worker(items[i]);
+    return runNext();
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, runNext));
+}
+
+interface PendingFile {
+  id: string;
+  file: File;
+  previewUrl: string;
 }
 
 export function UploadModal({
@@ -23,12 +42,12 @@ export function UploadModal({
   const [hotelId, setHotelId] = useState("");
   const [categoryId, setCategoryId] = useState("");
   const [roomCode, setRoomCode] = useState("");
-  const [file, setFile] = useState<File | null>(null);
+  const [pendingFiles, setPendingFiles] = useState<PendingFile[]>([]);
   const [caption, setCaption] = useState("");
   const [hq, setHq] = useState(true);
   const [tagsInput, setTagsInput] = useState("");
   const [dragOver, setDragOver] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
+  const [progress, setProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -36,50 +55,96 @@ export function UploadModal({
   const hotel = brand?.hotels.find((h) => h.id === hotelId);
   const category = hotel?.categories.find((c) => c.id === categoryId);
   const isAccommodations = category?.id === "accommodations";
+  const submitting = progress !== null;
 
-  const previewUrl = useMemo(() => (file ? URL.createObjectURL(file) : null), [file]);
+  const canSubmit = Boolean(
+    brandId && hotelId && categoryId && pendingFiles.length > 0 && (!isAccommodations || roomCode),
+  );
 
-  const canSubmit = Boolean(brandId && hotelId && categoryId && file && (!isAccommodations || roomCode));
-
-  function handleFile(f: File | undefined) {
-    if (!f) return;
-    if (!f.type.startsWith("image/")) {
-      setError("Please choose an image file.");
-      return;
-    }
-    setError(null);
-    setFile(f);
+  function addFiles(list: FileList | File[]) {
+    const incoming = Array.from(list);
+    const images = incoming.filter((f) => f.type.startsWith("image/"));
+    const skipped = incoming.length - images.length;
+    setError(skipped > 0 ? `Skipped ${skipped} file${skipped > 1 ? "s" : ""} — not an image.` : null);
+    if (images.length === 0) return;
+    setPendingFiles((prev) => [
+      ...prev,
+      ...images.map((file) => ({
+        id: `${file.name}-${file.size}-${Math.random().toString(36).slice(2, 8)}`,
+        file,
+        previewUrl: URL.createObjectURL(file),
+      })),
+    ]);
   }
+
+  function removeFile(id: string) {
+    setPendingFiles((prev) => {
+      const removed = prev.find((p) => p.id === id);
+      if (removed) URL.revokeObjectURL(removed.previewUrl);
+      return prev.filter((p) => p.id !== id);
+    });
+  }
+
+  function clearAllFiles() {
+    for (const p of pendingFiles) URL.revokeObjectURL(p.previewUrl);
+    setPendingFiles([]);
+  }
+
+  useEffect(() => {
+    return () => {
+      for (const p of pendingFiles) URL.revokeObjectURL(p.previewUrl);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   async function handleSubmit() {
-    if (!canSubmit || !file || !hotel || !category) return;
-    setSubmitting(true);
+    if (!canSubmit || !hotel || !category) return;
     setError(null);
-    try {
-      const uploaded = await uploadPhoto({ file, caption, hq, tags: parseTags(tagsInput) });
-      const key = uploadKey(hotel.id, category.id, isAccommodations ? roomCode : "");
-      addUploadedPhoto(key, {
-        id: `upload-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-        hq: uploaded.hq,
-        orientation: uploaded.orientation,
-        tags: uploaded.tags,
-        hue: 0,
-        src: uploaded.src,
-        caption: uploaded.caption,
-      });
-      onUploaded({ brandId, hotelId, categoryId });
-    } catch {
-      setError("Upload failed. Try again.");
-    } finally {
-      setSubmitting(false);
+    const key = uploadKey(hotel.id, category.id, isAccommodations ? roomCode : "");
+    const tags = parseTags(tagsInput);
+    const total = pendingFiles.length;
+    let done = 0;
+    setProgress({ done: 0, total });
+    let failures = 0;
+    await runBatch(pendingFiles, BATCH_CONCURRENCY, async (pending) => {
+      try {
+        const uploaded = await uploadPhoto({ file: pending.file, caption, hq, tags });
+        addUploadedPhoto(key, {
+          id: `upload-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+          hq: uploaded.hq,
+          orientation: uploaded.orientation,
+          tags: uploaded.tags,
+          hue: 0,
+          src: uploaded.src,
+          caption: uploaded.caption,
+        });
+      } catch {
+        failures++;
+      } finally {
+        done++;
+        setProgress({ done, total });
+      }
+    });
+    setProgress(null);
+    if (failures > 0) {
+      setError(`${failures} of ${total} photo${total > 1 ? "s" : ""} failed to upload. Try again for those.`);
+      setPendingFiles((prev) => prev.slice(-failures));
+      return;
     }
+    onUploaded({ brandId, hotelId, categoryId });
   }
+
+  const submitLabel = submitting
+    ? `Uploading ${progress.done}/${progress.total}…`
+    : pendingFiles.length > 1
+      ? `Upload ${pendingFiles.length} photos`
+      : "Upload";
 
   return (
     <div className="upload-modal" role="dialog" aria-modal="true" onClick={onClose}>
       <div className="upload-modal__card" onClick={(e) => e.stopPropagation()}>
         <div className="upload-modal__header">
-          <h2>Upload a photo</h2>
+          <h2>Upload photos</h2>
           <button className="upload-modal__close" onClick={onClose} aria-label="Close">
             ✕
           </button>
@@ -170,8 +235,10 @@ export function UploadModal({
           )}
 
           <div
-            className={`upload-modal__dropzone ${dragOver ? "upload-modal__dropzone--active" : ""}`}
-            onClick={() => fileInputRef.current?.click()}
+            className={`upload-modal__dropzone ${dragOver ? "upload-modal__dropzone--active" : ""} ${
+              pendingFiles.length > 0 ? "upload-modal__dropzone--filled" : ""
+            }`}
+            onClick={() => pendingFiles.length === 0 && fileInputRef.current?.click()}
             onDragOver={(e) => {
               e.preventDefault();
               setDragOver(true);
@@ -180,25 +247,70 @@ export function UploadModal({
             onDrop={(e) => {
               e.preventDefault();
               setDragOver(false);
-              handleFile(e.dataTransfer.files[0]);
+              addFiles(e.dataTransfer.files);
             }}
           >
-            {previewUrl ? (
-              <img className="upload-modal__preview" src={previewUrl} alt="Selected upload preview" />
+            {pendingFiles.length > 0 ? (
+              <div className="upload-modal__grid">
+                {pendingFiles.map((p) => (
+                  <div key={p.id} className="upload-modal__thumb">
+                    <img src={p.previewUrl} alt="" />
+                    <button
+                      type="button"
+                      className="upload-modal__thumb-remove"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        removeFile(p.id);
+                      }}
+                      aria-label="Remove photo"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  className="upload-modal__add-more"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    fileInputRef.current?.click();
+                  }}
+                >
+                  + Add more
+                </button>
+              </div>
             ) : (
               <>
                 <div className="upload-modal__dropzone-icon">⬆</div>
-                <div>Drag a photo here, or click to browse</div>
+                <div>Drag photos here (one or many), or click to browse</div>
               </>
             )}
             <input
               ref={fileInputRef}
               type="file"
               accept="image/*"
+              multiple
               hidden
-              onChange={(e) => handleFile(e.target.files?.[0])}
+              onChange={(e) => {
+                if (e.target.files) addFiles(e.target.files);
+                e.target.value = "";
+              }}
             />
           </div>
+          {pendingFiles.length > 0 && (
+            <div className="upload-modal__batch-info">
+              <span>
+                {pendingFiles.length} photo{pendingFiles.length > 1 ? "s" : ""} selected
+              </span>
+              <button type="button" className="upload-modal__clear" onClick={clearAllFiles}>
+                Clear all
+              </button>
+            </div>
+          )}
+
+          {pendingFiles.length > 1 && (
+            <p className="upload-modal__hint">Caption, tags, and HQ below apply to every photo in this batch.</p>
+          )}
 
           <label className="upload-modal__field">
             <span>Caption</span>
@@ -221,15 +333,24 @@ export function UploadModal({
             </label>
           </div>
 
+          {progress && (
+            <div className="upload-modal__progress">
+              <div
+                className="upload-modal__progress-bar"
+                style={{ width: `${(progress.done / progress.total) * 100}%` }}
+              />
+            </div>
+          )}
+
           {error && <p className="upload-modal__error">{error}</p>}
         </div>
 
         <div className="upload-modal__footer">
-          <button className="btn" onClick={onClose}>
+          <button className="btn" onClick={onClose} disabled={submitting}>
             Cancel
           </button>
           <button className="btn btn--primary" disabled={!canSubmit || submitting} onClick={handleSubmit}>
-            {submitting ? "Uploading…" : "Upload"}
+            {submitLabel}
           </button>
         </div>
       </div>

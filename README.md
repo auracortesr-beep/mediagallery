@@ -80,11 +80,14 @@ appears once at least one real photo with tags exists in that category.
 The landing page's "Upload" button opens a real modal: pick a brand, resort,
 category (respecting the adults-only Kids & Family exclusion automatically,
 since it's populated from the same `hotel.categories` the rest of the app
-uses), room type if the category is Accommodations, then drag a photo in (or
-click to browse), add a caption/tags/HQ flag, and submit. On success it
-navigates you straight to that hotel/category so you see the photo appear —
-uploads always *add* to whatever's already showing, never replace, unlike
-`media_photos.csv` overrides.
+uses), room type if the category is Accommodations, then drag in one photo
+or many at once (or click to browse — the file input accepts multiple
+files), add a caption/tags/HQ flag that apply to the whole batch, and
+submit. Each thumbnail in the batch can be removed individually before
+submitting, and a progress bar tracks the batch as it uploads (4 at a time).
+On success it navigates you straight to that hotel/category so you see the
+photos appear — uploads always *add* to whatever's already showing, never
+replace, unlike `media_photos.csv` overrides.
 
 There's no backend yet, so this is wired against a mock:
 `src/lib/uploadApi.ts` exports a single `uploadPhoto()` function that
